@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Quartus/projects/PHYS4310/simulation/modelsim
+vpulseController
+!s110 1770515456
+!i10b 1
+!s100 Eg?i?QnRJXHV4K;iBaW;_2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+Ih_0AD0S;KQY8GP?AfBlY?0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1770501026
+8PulseController.vo
+FPulseController.vo
+!i122 0
+L0 32 101276
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1770515456.000000
+!s107 PulseController.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|PulseController.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+npulse@controller

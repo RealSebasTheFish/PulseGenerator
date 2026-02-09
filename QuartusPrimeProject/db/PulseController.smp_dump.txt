@@ -1,0 +1,18 @@
+
+State Machine - |pulseController|pulseHandler:u_pc|state
+Name state.S_RUN state.S_ARMED state.S_LOAD_CAP state.S_LOAD_WAIT state.S_LOAD_SET state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 
+state.S_LOAD_SET 0 0 0 0 1 1 
+state.S_LOAD_WAIT 0 0 0 1 0 1 
+state.S_LOAD_CAP 0 0 1 0 0 1 
+state.S_ARMED 0 1 0 0 0 1 
+state.S_RUN 1 0 0 0 0 1 
+
+State Machine - |pulseController|usb_cmd_gateway:u_cmd|state
+Name state.S_CRC1 state.S_CRC0 state.S_BODY state.S_LEN state.S_SYNC1 state.S_SYNC0 
+state.S_SYNC0 0 0 0 0 0 0 
+state.S_SYNC1 0 0 0 0 1 1 
+state.S_LEN 0 0 0 1 0 1 
+state.S_BODY 0 0 1 0 0 1 
+state.S_CRC0 0 1 0 0 0 1 
+state.S_CRC1 1 0 0 0 0 1 

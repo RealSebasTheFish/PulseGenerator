@@ -1,0 +1,418 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/ORCAD/installation/tools/capture/library/Custom/VHDL
+vasync_fifo_8
+Z0 !s110 1770501051
+!i10b 1
+!s100 zhb5FLOokSKJ0:jAckbe13
+IffX`RzW<Ze8hLjQ:Sz:E?2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/Quartus/projects/PHYS4310/modelsimproject
+w1765762919
+8E:/Quartus/projects/PHYS4310/fifo.v
+FE:/Quartus/projects/PHYS4310/fifo.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1770501051.000000
+!s107 E:/Quartus/projects/PHYS4310/fifo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/fifo.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vclk_pll_50_to_400
+R0
+!i10b 1
+!s100 ^0fLQFQOezD<7WP?XjFja1
+IONTlm`VVJ=j05n>OkIeH73
+R1
+R2
+w1770499100
+8E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
+FE:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v|
+!i113 1
+R5
+R6
+vdeMux
+R0
+!i10b 1
+!s100 dk7]PklAoDCQiLW6G2>GT1
+Iai2RXTK45A=]C<]Ul:7ZF1
+R1
+R2
+Z7 w1757682968
+Z8 8E:/Quartus/projects/PHYS4310/deMux.v
+Z9 FE:/Quartus/projects/PHYS4310/deMux.v
+L0 14
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 E:/Quartus/projects/PHYS4310/deMux.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/deMux.v|
+!i113 1
+R5
+R6
+nde@mux
+vdeMux4
+R0
+!i10b 1
+!s100 7:BC?4Y^N@Wn2U8mV`WU;1
+IWYL:>Ui`<Z0>zCQ0BUXDI0
+R1
+R2
+R7
+R8
+R9
+L0 22
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
+nde@mux4
+vdeMux8
+R0
+!i10b 1
+!s100 Q3?_C=Zm:NZV==IS]IZ;31
+IRgmin[WPV7Ck54U9Tz1oJ1
+R1
+R2
+R7
+R8
+R9
+L0 33
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
+nde@mux8
+vdeMuxBase
+R0
+!i10b 1
+!s100 lF44YZ`zYh4ohIXhga@401
+INiXSkoe=^KoAjKOiEHc@d2
+R1
+R2
+R7
+R8
+R9
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
+nde@mux@base
+vinstructionHandler
+R0
+!i10b 1
+!s100 oBkV_j9k=nHoXK@4BZCWm1
+I^70m?cWb0noQc[d[4_AYL0
+R1
+R2
+w1766093836
+8E:/Quartus/projects/PHYS4310/instructionHandler.v
+FE:/Quartus/projects/PHYS4310/instructionHandler.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/instructionHandler.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/instructionHandler.v|
+!i113 1
+R5
+R6
+ninstruction@handler
+vmemory1c
+R0
+!i10b 1
+!s100 =D?1<FdL<QR6]j4QaQ5hi0
+I4aZGicUDePdHM=IiOc3K]1
+R1
+R2
+Z12 w1761926498
+Z13 8E:/Quartus/projects/PHYS4310/memory.v
+Z14 FE:/Quartus/projects/PHYS4310/memory.v
+L0 152
+R3
+r1
+!s85 0
+31
+R4
+Z15 !s107 E:/Quartus/projects/PHYS4310/memory.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/memory.v|
+!i113 1
+R5
+R6
+vmemory4c
+R0
+!i10b 1
+!s100 4STU:52<aJR_IoN<dom8<0
+IIQ3il1U<Q2H_Kng@H5BF82
+R1
+R2
+R12
+R13
+R14
+L0 24
+R3
+r1
+!s85 0
+31
+R4
+R15
+R16
+!i113 1
+R5
+R6
+vmux
+R0
+!i10b 1
+!s100 6[HQKgEQb^WhT:PKWO=oZ0
+IMa5XQ26T1GNRDSWoekdZ;2
+R1
+R2
+Z17 w1757711411
+Z18 8E:/Quartus/projects/PHYS4310/mux.v
+Z19 FE:/Quartus/projects/PHYS4310/mux.v
+L0 13
+R3
+r1
+!s85 0
+31
+R4
+Z20 !s107 E:/Quartus/projects/PHYS4310/mux.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/mux.v|
+!i113 1
+R5
+R6
+vmux4
+R0
+!i10b 1
+!s100 dJAS@>5XkDX?jTb6OeZe30
+I_idjOQzC^0CCfQfg6>hmg2
+R1
+R2
+R17
+R18
+R19
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+R20
+R21
+!i113 1
+R5
+R6
+vmux8
+R0
+!i10b 1
+!s100 >_2W7i3mf53K^=_?33nX50
+Icz5LFlFiJFa:mH>5YGmCB3
+R1
+R2
+R17
+R18
+R19
+L0 32
+R3
+r1
+!s85 0
+31
+R4
+R20
+R21
+!i113 1
+R5
+R6
+vmuxBase
+R0
+!i10b 1
+!s100 GSbmP@CP>8CIL]d`5kOgC1
+I0R[VJn1JmeCK[9ogEdWOQ2
+R1
+R2
+R17
+R18
+R19
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R20
+R21
+!i113 1
+R5
+R6
+nmux@base
+vpulseController
+R0
+!i10b 1
+!s100 d<]RS@C4L_0z84<3JACZS3
+IZSOzWilJkA:fg?LCfZ:de0
+R1
+R2
+w1770499461
+8E:/Quartus/projects/PHYS4310/pulseController.v
+FE:/Quartus/projects/PHYS4310/pulseController.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/pulseController.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/pulseController.v|
+!i113 1
+R5
+R6
+npulse@controller
+vpulseHandler
+!s110 1770501246
+!i10b 1
+!s100 D6[nacFgNfXm_KUWl_jOb0
+Im5KzA<XT^1CelN97>jChD3
+R1
+R2
+w1770501218
+8E:/Quartus/projects/PHYS4310/pulseHandler.v
+FE:/Quartus/projects/PHYS4310/pulseHandler.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1770501246.000000
+!s107 E:/Quartus/projects/PHYS4310/pulseHandler.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/pulseHandler.v|
+!i113 1
+R5
+R6
+npulse@handler
+vstorage
+R0
+!i10b 1
+!s100 7P3FFCbgK?2hIVYah@:e^0
+IS@^;gDSPfB?hPo4FW38EK1
+R1
+R2
+w1765811352
+8E:/Quartus/projects/PHYS4310/storage.v
+FE:/Quartus/projects/PHYS4310/storage.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/storage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/storage.v|
+!i113 1
+R5
+R6
+vtb_pulseController_50MHz
+R0
+!i10b 1
+!s100 FJcDh@hG[i08@OU_id<mg2
+I9]zGI=Ko[9`2;Kn[1b?IC1
+R1
+R2
+w1770500959
+8E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
+FE:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v|
+!i113 1
+R5
+R6
+ntb_pulse@controller_50@m@hz
+vuart
+!s110 1770501052
+!i10b 1
+!s100 9i8ce1J__V^iDR2P[c[kb1
+IaYEF[2==?DmkoNbInP:af1
+R1
+R2
+w1765761961
+8E:/Quartus/projects/PHYS4310/uart.v
+FE:/Quartus/projects/PHYS4310/uart.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1770501052.000000
+!s107 E:/Quartus/projects/PHYS4310/uart.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/uart.v|
+!i113 1
+R5
+R6
+vusb_cmd_gateway
+R0
+!i10b 1
+!s100 [;3KCQfciQ4TP6]Noz3;b1
+I_PlcR62MO<HKf>`A;f1<z3
+R1
+R2
+w1765762588
+8E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
+FE:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v|
+!i113 1
+R5
+R6

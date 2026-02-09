@@ -1,0 +1,93 @@
+E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module usb_cmd_gateway
+
+Top level modules:
+	usb_cmd_gateway
+
+} {} {}} E:/Quartus/projects/PHYS4310/memory.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memory4c
+-- Compiling module memory1c
+
+Top level modules:
+	memory4c
+	memory1c
+
+} {} {}} E:/Quartus/projects/PHYS4310/pulseController.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/pulseController.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pulseController
+
+Top level modules:
+	pulseController
+
+} {} {}} E:/Quartus/projects/PHYS4310/storage.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/storage.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module storage
+
+Top level modules:
+	storage
+
+} {} {}} E:/Quartus/projects/PHYS4310/pulseHandler.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/pulseHandler.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pulseHandler
+
+Top level modules:
+	pulseHandler
+
+} {} {}} E:/Quartus/projects/PHYS4310/instructionHandler.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/instructionHandler.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module instructionHandler
+
+Top level modules:
+	instructionHandler
+
+} {} {}} E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clk_pll_50_to_400
+
+Top level modules:
+	clk_pll_50_to_400
+
+} {} {}} E:/Quartus/projects/PHYS4310/mux.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module muxBase
+-- Compiling module mux
+-- Compiling module mux4
+-- Compiling module mux8
+
+Top level modules:
+	mux8
+
+} {} {}} E:/Quartus/projects/PHYS4310/deMux.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/deMux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module deMuxBase
+-- Compiling module deMux
+-- Compiling module deMux4
+-- Compiling module deMux8
+
+Top level modules:
+	deMux8
+
+} {} {}} E:/Quartus/projects/PHYS4310/fifo.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/fifo.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module async_fifo_8
+
+Top level modules:
+	async_fifo_8
+
+} {} {}} E:/Quartus/projects/PHYS4310/uart.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/uart.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}} E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v {1 {vlog -work work -stats=none E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_pulseController_50MHz
+
+Top level modules:
+	tb_pulseController_50MHz
+
+} {} {}}

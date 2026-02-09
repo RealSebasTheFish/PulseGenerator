@@ -1,0 +1,14 @@
+module uart_test (
+    input  wire [1:0] GPIO, // GPIO[0] is RX, GPIO[1] is TX
+    output wire [9:0] LEDR  // Visual feedback
+);
+
+    // Simple Loopback: Connect RX directly to TX
+    assign GPIO[1] = GPIO[0];
+
+    // Light up the first LED when the line is IDLE (UART High)
+    // This helps you see if the connection is alive.
+    assign LEDR[0] = GPIO[0];
+    assign LEDR[9:1] = 9'b0;
+
+endmodule

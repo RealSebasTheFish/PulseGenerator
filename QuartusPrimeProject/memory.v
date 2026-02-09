@@ -1,0 +1,349 @@
+`timescale 1ns / 1ps
+
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 09/11/2025 12:50:34 PM
+// Design Name: 
+// Module Name: pulseController
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+`timescale 1ns / 1ps
+
+module memory4c(
+
+dataIn, dataOut, blockS, channelS, 
+
+write, read, memReset,
+
+clk
+
+);
+
+
+
+    input [7:0] dataIn;
+
+    input [2:0] blockS;
+
+    input [1:0] channelS;
+
+    input write, read;
+
+    input [31:0] memReset;
+
+ 
+
+    output [7:0] dataOut;
+
+    
+
+    wire [7:0] dataOutBuffer;
+
+    
+
+    input clk;
+
+    
+
+    wire [255:0] multiToMem, memOut;
+
+    wire [31:0] channelToBlock, blockToChannel;
+
+    
+
+    wire [3:0] channelToBlockWrite;
+
+    wire [31:0] blockWrite;
+
+    
+
+    // DEFINING STORAGE MODULES
+
+    storage #(.SIZE(8)) block[31:0](
+
+        .clk(clk), 
+
+        .reset(memReset), 
+
+        .write(blockWrite), 
+
+        .data_in(multiToMem), 
+
+        .stored_bit(memOut)
+
+    );
+
+    
+
+    // PROCEDURALLY GENERATING MUX FOR BLOCK SELECTION ON EACH CHANNELS MEMORY
+
+    genvar i;
+
+    generate
+
+      for (i = 0; i < 4; i = i + 1) begin : gen_blockMux
+
+        deMux8 #(.WIDTH(8)) blockMux (
+
+          .in (channelToBlock[i*8 +: 8]),
+
+          .a0(multiToMem[i*64 +: 8]),   // slice [i*64+7 : i*64]
+
+          .a1(multiToMem[i*64+8*1 +: 8]),
+
+          .a2(multiToMem[i*64+8*2 +: 8]),
+
+          .a3(multiToMem[i*64+8*3 +: 8]),
+
+          .a4(multiToMem[i*64+8*4 +: 8]),
+
+          .a5(multiToMem[i*64+8*5 +: 8]),
+
+          .a6(multiToMem[i*64+8*6 +: 8]),
+
+          .a7(multiToMem[i*64+8*7 +: 8]),
+
+          .sel(blockS)
+
+        );
+
+      end
+
+    endgenerate
+
+    
+
+    // DATA ROUTING TO EACH RESPECTIVE CHANNEL BLOCK SELECTION MUX
+
+    deMux4 #(.WIDTH(8)) channelMux(
+
+        .in(dataIn), 
+
+        .a0(channelToBlock[7:0]),
+
+        .a1(channelToBlock[15:8]),
+
+        .a2(channelToBlock[23:16]),
+
+        .a3(channelToBlock[31:24]),
+
+        .sel(channelS)
+
+    );
+
+    
+
+    // WRITE SIGNAL ROUTING FROM CHANNEL MUX TO MEMORY BLOCKS    
+
+    generate
+
+      for (i = 0; i < 4; i = i + 1) begin : gen_blockRoute
+
+        deMux8 #(.WIDTH(1)) blockRoute (
+
+          .in (channelToBlockWrite[i]),
+
+          .a0(blockWrite[i*8]),   // slice [i*64+7 : i*64]
+
+          .a1(blockWrite[i*8 + 1]),
+
+          .a2(blockWrite[i*8 + 2]),
+
+          .a3(blockWrite[i*8 + 3]),
+
+          .a4(blockWrite[i*8 + 4]),
+
+          .a5(blockWrite[i*8 + 5]),
+
+          .a6(blockWrite[i*8 + 6]),
+
+          .a7(blockWrite[i*8 + 7]),
+
+          .sel(blockS)
+
+        );
+
+      end
+
+    endgenerate
+
+    
+
+    
+
+    // WRITE ROUTING FROM WRITE PIN TO EACH CHANNEL
+
+    deMux4 #(.WIDTH(1)) channelRoute(
+
+        .in(write), 
+
+        .a0(channelToBlockWrite[0]), 
+
+        .a1(channelToBlockWrite[1]),
+
+        .a2(channelToBlockWrite[2]),
+
+        .a3(channelToBlockWrite[3]),
+
+        .sel(channelS)
+
+    );
+
+    
+
+    
+
+    
+
+    
+
+    // READ MUX FROM BLOCKS TO CHANNEL HEADERS
+
+    generate
+
+      for (i = 0; i < 4; i = i + 1) begin : gen_readBlock
+
+        mux8 #(.WIDTH(8)) readBlock (
+
+          .out (blockToChannel[i*8 +: 8]),
+
+          .a0(memOut[i*64 +: 8]),   // slice [i*64+7 : i*64]
+
+          .a1(memOut[i*64+8*1 +: 8]),
+
+          .a2(memOut[i*64+8*2 +: 8]),
+
+          .a3(memOut[i*64+8*3 +: 8]),
+
+          .a4(memOut[i*64+8*4 +: 8]),
+
+          .a5(memOut[i*64+8*5 +: 8]),
+
+          .a6(memOut[i*64+8*6 +: 8]),
+
+          .a7(memOut[i*64+8*7 +: 8]),
+
+          .sel(blockS)
+
+        );
+
+      end
+
+    endgenerate
+
+    
+
+    // ROUTE FROM CHANNEL HEADER TO DATA OUTPUT
+
+    mux4 #(.WIDTH(8)) memChannelOutput(
+
+        .out(dataOutBuffer), 
+
+        .a0(blockToChannel[7:0]),
+
+        .a1(blockToChannel[15:8]),
+
+        .a2(blockToChannel[23:16]),
+
+        .a3(blockToChannel[31:24]),
+
+        .sel(channelS)
+
+    );
+
+    
+
+    // OUTPUT ONLY IF READ PIN IS HIGH
+
+    and readPinCheck [7:0] (dataOut, dataOutBuffer, {8{read}});
+
+        
+
+endmodule
+
+module memory1c (
+    input  wire [7:0] dataIn,       // byte write data
+    input  wire [2:0] blockS,       // which of the 8 bytes [0..7]
+    input  wire       write,        // write strobe (to selected block)
+    input  wire       read,         // read enable
+    input  wire [7:0] memReset,     // per-block reset bits (1=reset that byte)
+    input  wire       clk,
+
+    output wire [7:0] dataOut       // read data (gated by read)
+);
+    // 8 × 8-bit = 64-bit storage
+    wire [63:0] multiToMem;         // write bus into all blocks (demuxed)
+    wire [63:0] memOut;             // concatenated outputs of all blocks
+    wire [7:0]  blockWrite;         // per-block write strobes
+    wire [7:0]  dataOutBuffer;      // before read gating
+
+    // 8 storage bytes
+    storage #(.WIDTH(8)) block[7:0] (
+        .clk       (clk),
+        .reset     (memReset),      // each instance gets one bit
+        .write     (blockWrite),    // one write bit per block
+        .data_in   (multiToMem),    // each instance sees its 8-bit slice
+        .stored_bit(memOut)         // each instance drives its 8-bit slice
+    );
+
+    // Demux write DATA to the selected byte
+    deMux8 #(.WIDTH(8)) blockMux (
+        .in (dataIn),
+        .a0 (multiToMem[ 7:0]),
+        .a1 (multiToMem[15:8]),
+        .a2 (multiToMem[23:16]),
+        .a3 (multiToMem[31:24]),
+        .a4 (multiToMem[39:32]),
+        .a5 (multiToMem[47:40]),
+        .a6 (multiToMem[55:48]),
+        .a7 (multiToMem[63:56]),
+        .sel(blockS)
+    );
+
+    // Demux WRITE strobe to the selected byte
+    deMux8 #(.WIDTH(1)) blockRoute (
+        .in (write),
+        .a0 (blockWrite[0]),
+        .a1 (blockWrite[1]),
+        .a2 (blockWrite[2]),
+        .a3 (blockWrite[3]),
+        .a4 (blockWrite[4]),
+        .a5 (blockWrite[5]),
+        .a6 (blockWrite[6]),
+        .a7 (blockWrite[7]),
+        .sel(blockS)
+    );
+
+    // Mux READ from the selected byte
+    mux8 #(.WIDTH(8)) readBlock (
+        .out(dataOutBuffer),
+        .a0 (memOut[ 7:0]),
+        .a1 (memOut[15:8]),
+        .a2 (memOut[23:16]),
+        .a3 (memOut[31:24]),
+        .a4 (memOut[39:32]),
+        .a5 (memOut[47:40]),
+        .a6 (memOut[55:48]),
+        .a7 (memOut[63:56]),
+        .sel(blockS)
+    );
+
+    // Gate output with read
+    and readPinCheck [7:0] (dataOut, dataOutBuffer, {8{read}});
+
+endmodule
+

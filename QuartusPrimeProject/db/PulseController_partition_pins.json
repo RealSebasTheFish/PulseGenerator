@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "usb_tx",
+					"strict" : false
+				},
+				{
+					"name" : "clkled",
+					"strict" : false
+				},
+				{
+					"name" : "startled",
+					"strict" : false
+				},
+				{
+					"name" : "channel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "channel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "channel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "channel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led_arr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rb_clk",
+					"strict" : false
+				},
+				{
+					"name" : "clk50",
+					"strict" : false
+				},
+				{
+					"name" : "trig",
+					"strict" : false
+				},
+				{
+					"name" : "usb_rx",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

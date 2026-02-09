@@ -1,0 +1,385 @@
+`timescale 1ns/1ps
+module pulseController (
+  input  wire        clk50,
+  input  wire        rb_clk,
+  input  wire        usb_rx,
+  output wire        usb_tx,
+  input  wire        trig,
+  output wire        clkled,
+  output wire        startled,
+  output wire        trigled,
+  output wire [3:0]  channel,
+  output wire        led,
+  output wire [7:0]  led_arr
+);
+
+  localparam [7:0] ACK  = 8'h06;
+  localparam [7:0] NACK = 8'h15;
+
+  wire reset_n = 1'b1;
+
+  wire clk100, clk400, rb_clk50, rb_lock, chosen_50, lock2;
+  
+  reg [15:0] detect = 0;
+  reg rb_valid;
+  reg [1:0] clock_check;
+  
+  always @(posedge clk50) begin
+	clock_check = {clock_check[0], rb_clk};
+	if (clock_check[0] ^ clock_check[1]) begin
+		detect = 16'ha;
+		rb_valid = 1'b1;
+	end else if (detect > 0) begin
+		detect = detect - 1;
+	end else begin
+		rb_valid = 1'b0;
+	end
+  end 
+  
+  assign clkled = rb_valid;
+  
+  
+  clk_pll_10_to_50 wiz_1 (
+	.areset(~reset_n),
+	.inclk0(rb_clk),
+	.c0(rb_clk50),
+	.locked(rb_lock)
+  );
+	
+  clk_pll_50_to_400 wiz_2 (
+	.areset(~reset_n),
+	.inclk0(clk50),
+	.inclk1(rb_clk),
+	.clkswitch(rb_valid && rb_lock),
+	.c0(clk100),
+	.c1(clk400),
+	.locked(lock2)
+  );
+
+  wire async_ok_n = reset_n & lock2;
+  reg [2:0] rst_sync = 3'b000;
+  always @(posedge clk400 or negedge async_ok_n)
+    if (!async_ok_n) rst_sync <= 3'b000;
+    else             rst_sync <= {rst_sync[1:0],1'b1};
+  wire pc_reset_n = rst_sync[2];
+
+  reg trig_s1 = 1'b0, trig_s2 = 1'b0;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) {trig_s1,trig_s2} <= 2'b00;
+    else             {trig_s1,trig_s2} <= {trig,trig_s1};
+  wire trig_level_clk = trig_s2;
+
+  wire        rx_valid, tx_ready;
+  wire [7:0]  rx_data;
+  wire        tx_valid;
+  wire [7:0]  tx_data;
+  
+  
+  assign led_arr[7:0] = rx_data;
+
+  uart #(.CLK_HZ(100_000_000), .BAUD(115_200)) u_uart (
+    .clk(clk100), .rst(~reset_n),
+    .rx_i(usb_rx), .tx_o(usb_tx),
+    .rx_valid(rx_valid), .rx_data(rx_data),
+    .tx_valid(tx_valid), .tx_data(tx_data),
+    .tx_ready(tx_ready)
+  );
+
+  wire        cmd_valid;
+  wire [15:0] cmd_instr;
+  wire        resp_valid;
+  wire [7:0]  resp_data;
+
+  usb_cmd_gateway u_cmd (
+    .clk(clk100), .rst(~reset_n),
+    .rx_valid(rx_valid), .rx_data(rx_data),
+    .tx_ready(tx_ready),
+    .resp_valid(resp_valid), .resp_data(resp_data),
+    .cmd_valid(cmd_valid), .cmd_instr(cmd_instr),
+    .usbled(usbled)
+  );
+
+  reg [15:0] ins_uart = 16'h0000;
+  always @(posedge clk100)
+    if (cmd_valid) ins_uart <= cmd_instr;
+
+  reg [15:0] ins_sync1 = 16'h0000, ins_sync2 = 16'h0000;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) {ins_sync1,ins_sync2} <= 32'h0;
+    else             {ins_sync1,ins_sync2} <= {ins_uart,ins_sync1};
+  wire [15:0] ins_clk = ins_sync2;
+
+  reg cmd_tgl = 1'b0;
+  always @(posedge clk100)
+    if (cmd_valid) cmd_tgl <= ~cmd_tgl;
+
+  reg [2:0] cmd_tgl_sync = 3'b000;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) cmd_tgl_sync <= 3'b000;
+    else             cmd_tgl_sync <= {cmd_tgl_sync[1:0], cmd_tgl};
+
+  wire cmd_pulse_400 = cmd_tgl_sync[2] ^ cmd_tgl_sync[1];
+
+  wire [2:0] opcode_clk = ins_clk[15:13];
+  wire [1:0] chan_clk   = ins_clk[12:11];
+  wire [2:0] block_clk  = ins_clk[10:8];
+  wire [7:0] data_clk   = ins_clk[7:0];
+
+  wire [12:0] dec_delay, dec_width;
+  wire [1:0]  dec_control;
+  wire [3:0]  rw_signal;
+
+  instructionHandler u_ins (
+    .opcode(opcode_clk),
+    .data({chan_clk, block_clk, data_clk}),
+    .delay(dec_delay),
+    .width(dec_width),
+    .control(dec_control),
+    .rw_signal(rw_signal)
+  );
+
+  reg [3:0] pulse_timer = 4'd0;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) pulse_timer <= 0;
+    else if (cmd_pulse_400) pulse_timer <= 8;
+    else if (pulse_timer != 0) pulse_timer <= pulse_timer - 1;
+
+  wire instr_active = (pulse_timer != 0);
+  wire wr_delay_clk = instr_active & rw_signal[0];
+  wire wr_width_clk = instr_active & rw_signal[1];
+  wire rd_delay_clk = instr_active & rw_signal[2];
+  wire rd_width_clk = instr_active & rw_signal[3];
+
+  // STOP detect (clk400 for engine-side flush)
+  wire stop_cmd_400 = cmd_pulse_400 & (opcode_clk == 3'b011);
+
+  // STOP detect (clk100 for TXQ/RX-side flush) - SINGLE SOURCE OF TRUTH
+  wire stop_cmd_100  = cmd_valid && (cmd_instr[15:13] == 3'b011);
+
+  // IMPORTANT FIX:
+  // Do NOT OR in the stop_tgl_sync path here - it causes a second flush pulse
+  // after the STOP ACK is generated, wiping the queued ACK.
+  wire stop_flush_any = stop_cmd_100;
+
+  wire [7:0] delay_q, width_q;
+  wire eng_read;
+  wire [1:0] eng_channelS;
+  wire [2:0] eng_blockS;
+
+  memory4c u_delays (
+    .clk(clk400),
+    .dataIn(dec_delay[7:0]),
+    .dataOut(delay_q),
+    .blockS(eng_read ? eng_blockS : dec_delay[10:8]),
+    .channelS(eng_read ? eng_channelS : dec_delay[12:11]),
+    .write(wr_delay_clk),
+    .read(rd_delay_clk | eng_read),
+    .memReset(32'b0)
+  );
+
+  memory4c u_widths (
+    .clk(clk400),
+    .dataIn(dec_width[7:0]),
+    .dataOut(width_q),
+    .blockS(eng_read ? eng_blockS : dec_width[10:8]),
+    .channelS(eng_read ? eng_channelS : dec_width[12:11]),
+    .write(wr_width_clk),
+    .read(rd_width_clk | eng_read),
+    .memReset(32'b0)
+  );
+
+  reg rd_delay_d = 1'b0, rd_width_d = 1'b0;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) begin
+      rd_delay_d <= 1'b0;
+      rd_width_d <= 1'b0;
+    end else begin
+      rd_delay_d <= rd_delay_clk;
+      rd_width_d <= rd_width_clk;
+    end
+
+  wire rd_delay_fire = rd_delay_clk & ~rd_delay_d;
+  wire rd_width_fire = rd_width_clk & ~rd_width_d;
+
+  reg rd_delay_fire_d1 = 1'b0, rd_width_fire_d1 = 1'b0;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) begin
+      rd_delay_fire_d1 <= 1'b0;
+      rd_width_fire_d1 <= 1'b0;
+    end else begin
+      rd_delay_fire_d1 <= rd_delay_fire;
+      rd_width_fire_d1 <= rd_width_fire;
+    end
+
+  reg        rb_push_r;
+  reg [7:0]  rb_byte_r;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) begin
+      rb_push_r <= 1'b0;
+      rb_byte_r <= 8'h00;
+    end else begin
+      rb_push_r <= 1'b0;
+      if (rd_delay_fire_d1) begin
+        rb_byte_r <= delay_q;
+        rb_push_r <= 1'b1;
+      end else if (rd_width_fire_d1) begin
+        rb_byte_r <= width_q;
+        rb_push_r <= 1'b1;
+      end
+    end
+
+  wire rb_push = rb_push_r;
+  wire [7:0] rb_byte = rb_byte_r;
+
+  wire rb_fifo_empty;
+  wire [7:0] rb_fifo_rdata;
+  reg  rb_fifo_pop = 1'b0;
+
+  // write-side flush pulse (clk400)
+  reg [3:0] rb_flush_wcnt = 4'd0;
+  always @(posedge clk400 or negedge pc_reset_n)
+    if (!pc_reset_n) rb_flush_wcnt <= 0;
+    else if (stop_cmd_400) rb_flush_wcnt <= 4'd10;
+    else if (rb_flush_wcnt != 0) rb_flush_wcnt <= rb_flush_wcnt - 1;
+  wire rb_flush_w = (rb_flush_wcnt != 0);
+
+  // read-side flush pulse (clk100) - driven ONLY by stop_cmd_100 now
+  reg [3:0] rb_flush_rcnt = 4'd0;
+  always @(posedge clk100)
+    if (stop_cmd_100) rb_flush_rcnt <= 4'd10;
+    else if (rb_flush_rcnt != 0) rb_flush_rcnt <= rb_flush_rcnt - 1;
+  wire rb_flush_r = (rb_flush_rcnt != 0);
+
+  async_fifo_8 #(.ADDR_BITS(4)) u_rb_fifo (
+    .wclk(clk400), .wrst_n(pc_reset_n & ~rb_flush_w),
+    .w_en(rb_push), .w_data(rb_byte),
+    .w_full(),
+    .rclk(clk100), .rrst_n(reset_n & ~rb_flush_r),
+    .r_en(rb_fifo_pop),
+    .r_data(rb_fifo_rdata),
+    .r_empty(rb_fifo_empty)
+  );
+
+  reg [7:0] txq_mem [0:31];
+  reg [5:0] txq_wptr  = 6'd0;
+  reg [5:0] txq_rptr  = 6'd0;
+  reg [6:0] txq_count = 7'd0;
+
+  wire txq_empty = (txq_count == 0);
+  wire txq_full  = (txq_count == 32);
+
+  reg        rb_hold_valid = 1'b0;
+  reg [7:0]  rb_hold_data  = 8'h00;
+  reg [3:0]  resp_pending = 4'd0;
+  reg        ack_inflight = 1'b0;
+
+  reg        tx_valid_r = 1'b0;
+  reg [7:0]  tx_data_r  = 8'h00;
+
+  assign tx_valid = tx_valid_r;
+  assign tx_data  = tx_data_r;
+
+  reg        resp_hold_valid = 1'b0;
+  reg [7:0]  resp_hold_data  = 8'h00;
+
+  reg resp_valid_d = 1'b0;
+  always @(posedge clk100)
+    resp_valid_d <= resp_valid;
+  wire resp_fire = resp_valid & ~resp_valid_d;
+
+  reg rb_pop_armed = 1'b1;
+  reg rb_fifo_pop_d1 = 1'b0;
+
+  always @(posedge clk100)
+    if (stop_flush_any) begin
+      txq_wptr <= 0;
+      txq_rptr <= 0;
+      txq_count <= 0;
+      resp_pending <= 0;
+      ack_inflight <= 1'b0;
+      rb_hold_valid <= 0;
+      rb_hold_data <= 8'h00;
+      rb_fifo_pop <= 1'b0;
+      rb_fifo_pop_d1 <= 1'b0;
+      rb_pop_armed <= 1'b1;
+
+      // Hold only if resp_fire happens SAME cycle as stop_flush_any (rare)
+      resp_hold_valid <= resp_fire;
+      resp_hold_data  <= resp_data;
+
+      tx_valid_r <= 1'b0;
+      tx_data_r <= 8'h00;
+
+    end else begin
+      rb_fifo_pop <= 1'b0;
+      rb_fifo_pop_d1 <= rb_fifo_pop;
+      tx_valid_r <= 1'b0;
+
+      // enqueue held ACK/NACK (only if it was captured during flush)
+      if (resp_hold_valid && !txq_full) begin
+        txq_mem[txq_wptr[4:0]] <= resp_hold_data;
+        txq_wptr <= txq_wptr + 1;
+        txq_count <= txq_count + 1;
+        resp_pending <= resp_pending + 1;
+        ack_inflight <= 1'b1;
+        resp_hold_valid <= 1'b0;
+      end
+
+      // normal enqueue of gateway response
+      if (resp_fire && !txq_full) begin
+        txq_mem[txq_wptr[4:0]] <= resp_data;
+        txq_wptr <= txq_wptr + 1;
+        txq_count <= txq_count + 1;
+        resp_pending <= resp_pending + 1;
+        ack_inflight <= 1'b1;
+      end
+
+      if (rb_fifo_pop_d1) begin
+        rb_hold_valid <= 1'b1;
+        rb_hold_data <= rb_fifo_rdata;
+      end
+
+      if (rb_hold_valid && !txq_full) begin
+        txq_mem[txq_wptr[4:0]] <= rb_hold_data;
+        txq_wptr <= txq_wptr + 1;
+        txq_count <= txq_count + 1;
+        rb_hold_valid <= 1'b0;
+      end
+
+      if (rb_fifo_empty || rb_hold_valid || (resp_pending != 0))
+        rb_pop_armed <= 1'b1;
+
+      if (!rb_fifo_empty && !txq_full && !rb_hold_valid && !ack_inflight && rb_pop_armed) begin
+        rb_fifo_pop <= 1'b1;
+        rb_pop_armed <= 1'b0;
+      end
+
+      if (tx_ready && !txq_empty) begin
+        tx_data_r <= txq_mem[txq_rptr[4:0]];
+        tx_valid_r <= 1'b1;
+        if (txq_mem[txq_rptr[4:0]] == ACK)
+          ack_inflight <= 1'b0;
+        txq_rptr <= txq_rptr + 1;
+        txq_count <= txq_count - 1;
+        if (resp_pending != 0)
+          resp_pending <= resp_pending - 1;
+      end
+    end
+
+  pulseHandler u_pc (
+    .clk(clk400),
+    .reset_n(pc_reset_n),
+    .mem_read(eng_read),
+    .mem_channelS(eng_channelS),
+    .mem_blockS(eng_blockS),
+    .delay_byte(delay_q),
+    .width_byte(width_q),
+    .start(instr_active & (dec_control == 2'b11)),
+    .stop(instr_active & (dec_control == 2'b01)),
+    .trig(trig_level_clk),
+    .channel(channel),
+    .listening(startled),
+    .led(led)
+  );
+
+endmodule

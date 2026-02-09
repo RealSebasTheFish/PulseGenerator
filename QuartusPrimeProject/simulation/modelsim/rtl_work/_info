@@ -1,0 +1,548 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Quartus/projects/PHYS4310/simulation/modelsim
+vasync_fifo_8
+Z1 !s110 1770597531
+!i10b 1
+!s100 oQeRIbVS=:S7W;hdi=5]f2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiLmiI@KZXb;63VH?;T=o:2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765762919
+8E:/Quartus/projects/PHYS4310/fifo.v
+FE:/Quartus/projects/PHYS4310/fifo.v
+!i122 37
+L0 2 100
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1770597531.000000
+!s107 E:/Quartus/projects/PHYS4310/fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/fifo.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310
+Z8 tCvgOpt 0
+vclk_pll_10_to_50
+R1
+!i10b 1
+!s100 >H:MK8mEAnFFHOiL<m?;d3
+R2
+InJ1;e1fP8cYd1PHmbFFGn3
+R3
+R0
+w1770522985
+8E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v
+FE:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v
+!i122 36
+L0 40 124
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v|
+!i113 1
+R6
+R7
+R8
+vclk_pll_10_to_50_altpll
+R1
+!i10b 1
+!s100 V6K5?l@>VA^MFEUNg?<Xm1
+R2
+IQVB>>a62k`dU8k3EJ86510
+R3
+R0
+w1770526083
+8E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v
+FE:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v
+!i122 35
+L0 31 79
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310/db|E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v|
+!i113 1
+R6
+Z9 !s92 -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db
+R8
+vclk_pll_50_to_400
+R1
+!i10b 1
+!s100 Y9Tc;O;OBIR5P>;84g=B42
+R2
+I]7XczPd02BA@dCjcgcZR73
+R3
+R0
+w1770527875
+8E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
+FE:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
+!i122 34
+L0 40 140
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v|
+!i113 1
+R6
+R7
+R8
+vclk_pll_50_to_400_altpll
+R1
+!i10b 1
+!s100 Lo9:I6dQCGlaz7AaMRGH]2
+R2
+I147`D:[K0c:BSOUUQYH2k1
+R3
+R0
+w1770527935
+8E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v
+FE:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v
+!i122 33
+L0 31 88
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310/db|E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v|
+!i113 1
+R6
+R9
+R8
+vdeMux
+R1
+!i10b 1
+!s100 HhemfUzeH4U@g];BaaAQ`0
+R2
+IF=:o;:YXLE:e8:kdXaP@X2
+R3
+R0
+Z10 w1757682968
+Z11 8E:/Quartus/projects/PHYS4310/deMux.v
+Z12 FE:/Quartus/projects/PHYS4310/deMux.v
+!i122 32
+L0 14 7
+R4
+r1
+!s85 0
+31
+R5
+Z13 !s107 E:/Quartus/projects/PHYS4310/deMux.v|
+Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/deMux.v|
+!i113 1
+R6
+R7
+R8
+nde@mux
+vdeMux4
+R1
+!i10b 1
+!s100 mEX26:GGPcGan]c9@o2V]0
+R2
+Ib:0aIYb55iTJNamE_jCan3
+R3
+R0
+R10
+R11
+R12
+!i122 32
+L0 22 10
+R4
+r1
+!s85 0
+31
+R5
+R13
+R14
+!i113 1
+R6
+R7
+R8
+nde@mux4
+vdeMux8
+R1
+!i10b 1
+!s100 ocm<Y7>d]^e<hOJiFQfdE3
+R2
+IQ3g[W@W]8Dl:1bJK6N=l[0
+R3
+R0
+R10
+R11
+R12
+!i122 32
+L0 33 10
+R4
+r1
+!s85 0
+31
+R5
+R13
+R14
+!i113 1
+R6
+R7
+R8
+nde@mux8
+vdeMuxBase
+R1
+!i10b 1
+!s100 iiIhDHMdAkY:dkGd9G]HR1
+R2
+IOl8kBP0D0JT]K:8LOnN?51
+R3
+R0
+R10
+R11
+R12
+!i122 32
+L0 3 10
+R4
+r1
+!s85 0
+31
+R5
+R13
+R14
+!i113 1
+R6
+R7
+R8
+nde@mux@base
+vinstructionHandler
+R1
+!i10b 1
+!s100 Ifo33;;TZ5aQ][TUfmngN3
+R2
+IO:CAX[42523<b48>ZCHk^1
+R3
+R0
+w1766093836
+8E:/Quartus/projects/PHYS4310/instructionHandler.v
+FE:/Quartus/projects/PHYS4310/instructionHandler.v
+!i122 28
+L0 2 60
+R4
+r1
+!s85 0
+31
+Z15 !s108 1770597530.000000
+!s107 E:/Quartus/projects/PHYS4310/instructionHandler.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/instructionHandler.v|
+!i113 1
+R6
+R7
+R8
+ninstruction@handler
+vmemory1c
+Z16 !s110 1770597530
+!i10b 1
+!s100 hF_iXRd0>nomFL42XjSYj1
+R2
+IZlzTW74`SJOCWDjLlBa=83
+R3
+R0
+Z17 w1770597507
+Z18 8E:/Quartus/projects/PHYS4310/memory.v
+Z19 FE:/Quartus/projects/PHYS4310/memory.v
+!i122 27
+L0 278 71
+R4
+r1
+!s85 0
+31
+R15
+Z20 !s107 E:/Quartus/projects/PHYS4310/memory.v|
+Z21 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/memory.v|
+!i113 1
+R6
+R7
+R8
+vmemory4c
+R16
+!i10b 1
+!s100 o[W@5?G91@J3R7h?Tc??91
+R2
+IdJg]NbbkMX=<D:B32fhFG1
+R3
+R0
+R17
+R18
+R19
+!i122 27
+L0 26 251
+R4
+r1
+!s85 0
+31
+R15
+R20
+R21
+!i113 1
+R6
+R7
+R8
+vmux
+R16
+!i10b 1
+!s100 z__z8`EcU]S4KH4T:iPK`3
+R2
+I>0fYWHfz?6_`_cRJ2eBRY0
+R3
+R0
+Z22 w1757711411
+Z23 8E:/Quartus/projects/PHYS4310/mux.v
+Z24 FE:/Quartus/projects/PHYS4310/mux.v
+!i122 25
+L0 13 7
+R4
+r1
+!s85 0
+31
+R15
+Z25 !s107 E:/Quartus/projects/PHYS4310/mux.v|
+Z26 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/mux.v|
+!i113 1
+R6
+R7
+R8
+vmux4
+R16
+!i10b 1
+!s100 Q:3gMG7>hH47gI5n8nK5c3
+R2
+IIz^zO<FzXGzI>z3BV[XfW1
+R3
+R0
+R22
+R23
+R24
+!i122 25
+L0 21 10
+R4
+r1
+!s85 0
+31
+R15
+R25
+R26
+!i113 1
+R6
+R7
+R8
+vmux8
+R16
+!i10b 1
+!s100 MO?l2z867j?83dn;HSQ3P0
+R2
+Ilaz603c4g?6U]::@R>egF1
+R3
+R0
+R22
+R23
+R24
+!i122 25
+L0 32 10
+R4
+r1
+!s85 0
+31
+R15
+R25
+R26
+!i113 1
+R6
+R7
+R8
+vmuxBase
+R16
+!i10b 1
+!s100 DeNCJJ^<IZV;KHI?dh4OB2
+R2
+IdZYd6TC;bHDKGLaI?:R:j3
+R3
+R0
+R22
+R23
+R24
+!i122 25
+L0 3 9
+R4
+r1
+!s85 0
+31
+R15
+R25
+R26
+!i113 1
+R6
+R7
+R8
+nmux@base
+vpulseController
+R16
+!i10b 1
+!s100 fUfJ7lof^ZIoAXWfQ[3RP3
+R2
+IJDn9UL:=bHN7e8b8WU=:O0
+R3
+R0
+w1770528415
+8E:/Quartus/projects/PHYS4310/pulseController.v
+FE:/Quartus/projects/PHYS4310/pulseController.v
+!i122 21
+L0 2 384
+R4
+r1
+!s85 0
+31
+R15
+!s107 E:/Quartus/projects/PHYS4310/pulseController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/pulseController.v|
+!i113 1
+R6
+R7
+R8
+npulse@controller
+vpulseHandler
+R16
+!i10b 1
+!s100 5@gBK^;HRU0MoWOMf5UYg1
+R2
+IeU:bWd^`d9UJ_;WlYohea1
+R3
+R0
+w1770597481
+8E:/Quartus/projects/PHYS4310/pulseHandler.v
+FE:/Quartus/projects/PHYS4310/pulseHandler.v
+!i122 20
+L0 5 669
+R4
+r1
+!s85 0
+31
+R15
+!s107 E:/Quartus/projects/PHYS4310/pulseHandler.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/pulseHandler.v|
+!i113 1
+R6
+R7
+R8
+npulse@handler
+vstorage
+R16
+!i10b 1
+!s100 1>;M^HI8za[ZTY8gPbN`01
+R2
+ICdSCfa6:bQ>8>OS4gll1e3
+R3
+R0
+w1765811352
+8E:/Quartus/projects/PHYS4310/storage.v
+FE:/Quartus/projects/PHYS4310/storage.v
+!i122 19
+L0 3 20
+R4
+r1
+!s85 0
+31
+Z27 !s108 1770597529.000000
+!s107 E:/Quartus/projects/PHYS4310/storage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/storage.v|
+!i113 1
+R6
+R7
+R8
+vtb_pulseController_50MHz
+Z28 !s110 1770597529
+!i10b 1
+!s100 Ybbjh5]Gn3mP1k;<zZ<ED0
+R2
+Ij]2`YBG[6nYLeja2fmNFY3
+R3
+R0
+w1770528815
+8E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
+FE:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
+!i122 18
+L0 10 162
+R4
+r1
+!s85 0
+31
+R27
+!s107 E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v|
+!i113 1
+R6
+R7
+R8
+ntb_pulse@controller_50@m@hz
+vuart
+R28
+!i10b 1
+!s100 7>eJL4@@YH_HgRFhGoj;20
+R2
+I;bJe^lkokU^1KS7561HZe0
+R3
+R0
+w1765761961
+8E:/Quartus/projects/PHYS4310/uart.v
+FE:/Quartus/projects/PHYS4310/uart.v
+!i122 17
+L0 2 135
+R4
+r1
+!s85 0
+31
+R27
+!s107 E:/Quartus/projects/PHYS4310/uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/uart.v|
+!i113 1
+R6
+R7
+R8
+vusb_cmd_gateway
+R28
+!i10b 1
+!s100 lnPI=?Ha:WKImTg3JBdPY1
+R2
+IW72]W_1=ik8jRM]7]JgAm3
+R3
+R0
+w1765762588
+8E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
+FE:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
+!i122 16
+L0 2 145
+R4
+r1
+!s85 0
+31
+R27
+!s107 E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Quartus/projects/PHYS4310|E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v|
+!i113 1
+R6
+R7
+R8

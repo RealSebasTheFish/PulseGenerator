@@ -1,0 +1,20 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/deMux.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/fifo.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/instructionHandler.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/mux.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/pulseController.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/pulseHandler.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/storage.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/uart.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db {E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v}
+vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/memory.v}
+
