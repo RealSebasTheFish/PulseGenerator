@@ -1,0 +1,8 @@
+module debug (
+	input wire [3:0] channel
+);
+
+assign wire = 4'b1111;
+
+
+endmodule

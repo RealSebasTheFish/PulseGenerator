@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at pulseHandler.v(227): always construct contains both blocking and non-blocking assignments File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v Line: 227

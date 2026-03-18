@@ -8,11 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clkled",
+					"name" : "startled",
 					"strict" : false
 				},
 				{
-					"name" : "startled",
+					"name" : "trigled",
 					"strict" : false
 				},
 				{
@@ -56,19 +56,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "led_arr[6]",
-					"strict" : false
-				},
-				{
 					"name" : "led_arr[7]",
 					"strict" : false
 				},
 				{
-					"name" : "rb_clk",
+					"name" : "clk50",
 					"strict" : false
 				},
 				{
-					"name" : "clk50",
+					"name" : "rb_clk",
 					"strict" : false
 				},
 				{

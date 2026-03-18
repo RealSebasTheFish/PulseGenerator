@@ -30,7 +30,7 @@ module usb_cmd_gateway (
                S_CRC0  = 3'd4,
                S_CRC1  = 3'd5;
 
-    localparam ACK_DELAY_CYCLES = 0;  // <<< added
+    localparam integer ACK_DELAY_CYCLES = 868;  // <<< added
 
     reg [2:0]  state = S_SYNC0;
     reg [7:0]  index;
@@ -38,9 +38,9 @@ module usb_cmd_gateway (
     reg [7:0]  body [0:3];
 
     // ACK delay machinery
-    reg        ack_pending;
+    reg        ack_pending = 1'b0;
     reg [7:0]  ack_data;
-    reg [3:0]  ack_delay_cnt;
+    reg [9:0]  ack_delay_cnt;
 
     // CRC16-CCITT (poly=0x1021, init=0xFFFF)
     function [15:0] crc16_ccitt;
@@ -85,7 +85,7 @@ module usb_cmd_gateway (
                 end
             end
 
-            if (rx_valid) begin
+            if (rx_valid  && !ack_pending) begin
                 case (state)
                     S_SYNC0: begin
                         if (rx_data == 8'h55) state <= S_SYNC1;

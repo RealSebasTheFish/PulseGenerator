@@ -1,0 +1,21 @@
+# ============================================================
+# Base input clocks (adjust periods if different)
+# ============================================================
+create_clock -name clk50   -period 20.000  [get_ports clk50]    ;# 50 MHz
+create_clock -name rb_clk  -period 100.000 [get_ports rb_clk]   ;# 10 MHz if that's what rb_clk is (EDIT!)
+
+# ============================================================
+# Generated clocks from PLLs
+# IMPORTANT: these must point at the PLL output pins as seen by TimeQuest
+# Use: Report Clocks -> find exact node names
+# ============================================================
+
+# Example patterns (YOU MUST ADJUST the get_pins paths):
+# create_generated_clock -name rb_clk50 -source [get_ports rb_clk] \
+#    -divide_by 1 [get_pins {wiz_1|...|c0}]
+
+# create_generated_clock -name clk100 -source [get_ports clk50] \
+#    -divide_by 1 [get_pins {wiz_2|...|c0}]
+
+# create_generated_clock -name clk400 -source [get_ports clk50] \
+#    -divide_by 1 [get_pins {wiz_2|...|c1}]

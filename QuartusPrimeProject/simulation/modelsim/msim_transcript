@@ -1,4 +1,4 @@
-# Reading pref.tcl
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do PulseController_run_msim_rtl_verilog.do
 # if ![file isdirectory verilog_libs] {
 # 	file mkdir verilog_libs
@@ -7,14 +7,14 @@
 # vlib verilog_libs/altera_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
 # vmap altera_ver ./verilog_libs/altera_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_ver ./verilog_libs/altera_ver 
-# Copying E:/SketchModelSIm/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {e:/quartus/quartus/eda/sim_lib/altera_primitives.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:20 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartus/quartus/eda/sim_lib/altera_primitives.v 
+# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:37 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -95,19 +95,19 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 19:20:21 on Feb 08,2026, Elapsed time: 0:00:01
+# End time: 22:58:38 on Feb 20,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
 # vmap lpm_ver ./verilog_libs/lpm_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {e:/quartus/quartus/eda/sim_lib/220model.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:22 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver e:/quartus/quartus/eda/sim_lib/220model.v 
+# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:38 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -170,19 +170,19 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 19:20:23 on Feb 08,2026, Elapsed time: 0:00:01
+# End time: 22:58:38 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
 # vmap sgate_ver ./verilog_libs/sgate_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {e:/quartus/quartus/eda/sim_lib/sgate.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:23 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver e:/quartus/quartus/eda/sim_lib/sgate.v 
+# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:38 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -223,19 +223,19 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 19:20:23 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:38 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {e:/quartus/quartus/eda/sim_lib/altera_mf.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:24 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver e:/quartus/quartus/eda/sim_lib/altera_mf.v 
+# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:39 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -364,19 +364,19 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 19:20:26 on Feb 08,2026, Elapsed time: 0:00:02
+# End time: 22:58:39 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {e:/quartus/quartus/eda/sim_lib/altera_lnsim.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:27 on Feb 08,2026
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver e:/quartus/quartus/eda/sim_lib/altera_lnsim.sv 
+# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:39 on Feb 20,2026
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -458,19 +458,19 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 19:20:28 on Feb 08,2026, Elapsed time: 0:00:01
+# End time: 22:58:40 on Feb 20,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
 # ** Warning: (vlib-34) Library already exists at "verilog_libs/fiftyfivenm_ver".
 # vmap fiftyfivenm_ver ./verilog_libs/fiftyfivenm_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap fiftyfivenm_ver ./verilog_libs/fiftyfivenm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work fiftyfivenm_ver {e:/quartus/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:29 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver e:/quartus/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
+# vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:40 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS_HIGH
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 19:20:30 on Feb 08,2026, Elapsed time: 0:00:01
+# End time: 22:58:40 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work fiftyfivenm_ver {e:/quartus/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:30 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver e:/quartus/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
+# vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:40 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 19:20:33 on Feb 08,2026, Elapsed time: 0:00:03
+# End time: 22:58:43 on Feb 20,2026, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -578,14 +578,14 @@
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/deMux.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/deMux.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:43 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v 
 # -- Compiling module deMuxBase
 # -- Compiling module deMux
 # -- Compiling module deMux4
@@ -593,32 +593,22 @@
 # 
 # Top level modules:
 # 	deMux8
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:43 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/fifo.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/fifo.v 
-# -- Compiling module async_fifo_8
-# 
-# Top level modules:
-# 	async_fifo_8
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/instructionHandler.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/instructionHandler.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/instructionHandler.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:43 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/instructionHandler.v 
 # -- Compiling module instructionHandler
 # 
 # Top level modules:
 # 	instructionHandler
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:43 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/mux.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/mux.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:43 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v 
 # -- Compiling module muxBase
 # -- Compiling module mux
 # -- Compiling module mux4
@@ -626,142 +616,125 @@
 # 
 # Top level modules:
 # 	mux8
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:43 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/pulseController.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/pulseController.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v 
 # -- Compiling module pulseController
 # 
 # Top level modules:
 # 	pulseController
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/pulseHandler.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/pulseHandler.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v 
 # -- Compiling module pulseHandler
 # 
 # Top level modules:
 # 	pulseHandler
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/storage.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/storage.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/storage.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/storage.v 
 # -- Compiling module storage
 # 
 # Top level modules:
 # 	storage
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/uart.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/uart.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v 
 # -- Compiling module uart
 # 
 # Top level modules:
 # 	uart
-# End time: 19:20:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v 
 # -- Compiling module usb_cmd_gateway
 # 
 # Top level modules:
 # 	usb_cmd_gateway
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:01
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_400.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_400.v 
 # -- Compiling module clk_pll_50_to_400
 # 
 # Top level modules:
 # 	clk_pll_50_to_400
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:44 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v 
 # -- Compiling module clk_pll_10_to_50
 # 
 # Top level modules:
 # 	clk_pll_10_to_50
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:44 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db {E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310/db" E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:45 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v 
 # -- Compiling module clk_pll_10_to_50_altpll
 # 
 # Top level modules:
 # 	clk_pll_10_to_50_altpll
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:45 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db {E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310/db" E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_50_to_400_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:45 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_50_to_400_altpll.v 
 # -- Compiling module clk_pll_50_to_400_altpll
 # 
 # Top level modules:
 # 	clk_pll_50_to_400_altpll
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:45 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/memory.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/memory.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:45 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v 
 # -- Compiling module memory4c
 # -- Compiling module memory1c
 # 
 # Top level modules:
 # 	memory4c
 # 	memory1c
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:45 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 {E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:20:35 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject {C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:45 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject" C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v 
 # -- Compiling module tb_pulseController_50MHz
 # 
 # Top level modules:
 # 	tb_pulseController_50MHz
-# End time: 19:20:35 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 22:58:45 on Feb 20,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_dual_clk_controller
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_dual_clk_controller 
-# Start time: 19:20:36 on Feb 08,2026
-# ** Error: (vsim-3170) Could not find 'tb_dual_clk_controller'.
-#         Searched libraries:
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/altera_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/lpm_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/sgate_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/altera_mf_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/altera_lnsim_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/verilog_libs/fiftyfivenm_ver
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/rtl_work
-#             E:/Quartus/projects/PHYS4310/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./PulseController_run_msim_rtl_verilog.do PAUSED at line 54
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=\"+acc\" work.tb_pulseController_50MHz
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" work.tb_pulseController_50MHz 
-# Start time: 19:20:36 on Feb 08,2026
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_pulseController_50MHz
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_pulseController_50MHz 
+# Start time: 22:58:46 on Feb 20,2026
 # Loading work.tb_pulseController_50MHz
 # Loading work.pulseController
 # Loading work.clk_pll_10_to_50
@@ -777,7 +750,6 @@ vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lns
 # Loading work.deMux
 # Loading work.mux4
 # Loading work.mux
-# Loading work.async_fifo_8
 # Loading work.pulseHandler
 # Loading altera_mf_ver.MF_cycloneiii_pll
 # Loading altera_mf_ver.cda_m_cntr
@@ -788,394 +760,107 @@ vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lns
 # Loading work.storage
 # Loading work.deMux8
 # Loading work.mux8
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut File: E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v Line: 31
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'rb_clk'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'led_arr'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_uart'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_uart File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 80
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_tx_tick'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_rx_sample'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_pc'.  Expected 14, found 13.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_pc File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 369
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(369): [TFMPC] - Missing connection for port 'ready'.
-add wave -position end  sim:/tb_pulseController_50MHz/channel
-run
+# ** Warning: (vsim-3017) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v(30): [TFMPC] - Too few port connections. Expected 11, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v
+# ** Warning: (vsim-3722) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v(30): [TFMPC] - Missing connection for port 'rb_clk'.
+# ** Warning: (vsim-3722) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v(30): [TFMPC] - Missing connection for port 'led_arr'.
+# ** Warning: (vsim-3017) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v(115): [TFMPC] - Too few port connections. Expected 11, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_uart File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v
+# ** Warning: (vsim-3722) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v(115): [TFMPC] - Missing connection for port 'dbg_tx_tick'.
+# ** Warning: (vsim-3722) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v(115): [TFMPC] - Missing connection for port 'dbg_rx_sample'.
+# ** Warning: (vsim-3017) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v(497): [TFMPC] - Too few port connections. Expected 15, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_pc File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v
+# ** Warning: (vsim-3722) C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v(497): [TFMPC] - Missing connection for port 'ready'.
 # 
-# === [PULSE ENGINE 50MHZ FUNCTIONAL TEST] ===
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# === [PULSE ENGINE 50MHZ FUNCTIONAL TEST + READBACK] ===
 # [TB] Resetting and waiting for PLL Lock...
 #  Note : MAX 10 PLL locked to incoming clock
 # Time: 90000  Instance: tb_pulseController_50MHz.dut.wiz_2.altpll_component.cycloneiii_pll.pll3
 # [TB] PLL Locked at 2000000. Internal clk400/clk100 active.
-# [TB] Programming Delay=0x10, Width=0x08...
+# [TB] Programming CH0 BLK0 Delay=0x10, Width=0x08...
+# [93800000] TB->DUT TX byte = 0x55 (depth=2)
+# [180600000] TB->DUT TX byte = 0xaa (depth=2)
+# [267400000] TB->DUT TX byte = 0x04 (depth=2)
+# [354200000] TB->DUT TX byte = 0x01 (depth=2)
+# [441000000] TB->DUT TX byte = 0x00 (depth=2)
+# [527800000] TB->DUT TX byte = 0x00 (depth=2)
+# [614600000] TB->DUT TX byte = 0x10 (depth=2)
+# [701400000] TB->DUT TX byte = 0x45 (depth=2)
+# [788200000] TB->DUT TX byte = 0xe0 (depth=2)
+# [889800000] DUT->TB RX byte = 0x06 (depth=2)
+# [976600000] TB->DUT TX byte = 0x55 (depth=2)
+# [1063400000] TB->DUT TX byte = 0xaa (depth=2)
+# [1150200000] TB->DUT TX byte = 0x04 (depth=2)
+# [1237000000] TB->DUT TX byte = 0x02 (depth=2)
+# [1323800000] TB->DUT TX byte = 0x00 (depth=2)
+# [1410600000] TB->DUT TX byte = 0x00 (depth=2)
+# [1497400000] TB->DUT TX byte = 0x08 (depth=2)
+# [1584200000] TB->DUT TX byte = 0xa0 (depth=2)
+# [1671000000] TB->DUT TX byte = 0xe8 (depth=2)
+# [1772600000] DUT->TB RX byte = 0x06 (depth=2)
+# [TB] Readback verify CH0 BLK0...
+# [1859400000] TB->DUT TX byte = 0x55 (depth=3)
+# [1946200000] TB->DUT TX byte = 0xaa (depth=3)
+# [2033000000] TB->DUT TX byte = 0x04 (depth=3)
+# [2119800000] TB->DUT TX byte = 0x05 (depth=3)
+# [2206600000] TB->DUT TX byte = 0x00 (depth=3)
+# [2293400000] TB->DUT TX byte = 0x00 (depth=3)
+# [2380200000] TB->DUT TX byte = 0x00 (depth=3)
+# [2467000000] TB->DUT TX byte = 0x85 (depth=3)
+# [2553800000] TB->DUT TX byte = 0x38 (depth=3)
+# [2655400000] DUT->TB RX byte = 0x06 (depth=3)
+# [2742220000] DUT->TB RX byte = 0x10 (depth=2)
+# [2742220000] TB PASS: READ cmd=0x05 ch=0 blk=0 -> 0x10
+# [2829020000] TB->DUT TX byte = 0x55 (depth=3)
+# [2915820000] TB->DUT TX byte = 0xaa (depth=3)
+# [3002620000] TB->DUT TX byte = 0x04 (depth=3)
+# [3089420000] TB->DUT TX byte = 0x06 (depth=3)
+# [3176220000] TB->DUT TX byte = 0x00 (depth=3)
+# [3263020000] TB->DUT TX byte = 0x00 (depth=3)
+# [3349820000] TB->DUT TX byte = 0x00 (depth=3)
+# [3436620000] TB->DUT TX byte = 0x59 (depth=3)
+# [3523420000] TB->DUT TX byte = 0xa3 (depth=3)
+# [3625020000] DUT->TB RX byte = 0x06 (depth=3)
+# [3711840000] DUT->TB RX byte = 0x08 (depth=2)
+# [3711840000] TB PASS: READ cmd=0x06 ch=0 blk=0 -> 0x08
 # [TB] Sending START command...
+# [3798640000] TB->DUT TX byte = 0x55 (depth=2)
+# [3885440000] TB->DUT TX byte = 0xaa (depth=2)
+# [3972240000] TB->DUT TX byte = 0x04 (depth=2)
+# [4059040000] TB->DUT TX byte = 0x07 (depth=2)
+# [4145840000] TB->DUT TX byte = 0x00 (depth=2)
+# [4232640000] TB->DUT TX byte = 0x00 (depth=2)
+# [4319440000] TB->DUT TX byte = 0x00 (depth=2)
+# [4406240000] TB->DUT TX byte = 0xed (depth=2)
+# [4493040000] TB->DUT TX byte = 0xd5 (depth=2)
+# [4594640000] DUT->TB RX byte = 0x06 (depth=2)
 # [TB] Triggering Pulse...
 # [TB] Channel bits observed: 0000
 # [TB] Sending STOP command...
+# [4701540000] TB->DUT TX byte = 0x55 (depth=2)
+# [4788340000] TB->DUT TX byte = 0xaa (depth=2)
+# [4875140000] TB->DUT TX byte = 0x04 (depth=2)
+# [4961940000] TB->DUT TX byte = 0x03 (depth=2)
+# [5048740000] TB->DUT TX byte = 0x00 (depth=2)
+# [5135540000] TB->DUT TX byte = 0x00 (depth=2)
+# [5222340000] TB->DUT TX byte = 0x00 (depth=2)
+# [5309140000] TB->DUT TX byte = 0x1c (depth=2)
+# [5395940000] TB->DUT TX byte = 0x1f (depth=2)
+# [5497540000] DUT->TB RX byte = 0x06 (depth=2)
 # [TB] Sending trigger after STOP (Checking for silence)...
 # [TB] PASS: No activity after STOP.
 # === [TEST COMPLETE] ===
 # 
-# ** Note: $finish    : E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(168)
-#    Time: 3588640 ns  Iteration: 0  Instance: /tb_pulseController_50MHz
+# ** Note: $finish    : C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v(393)
+#    Time: 5517640 ns  Iteration: 0  Instance: /tb_pulseController_50MHz
 # 1
-# Break in Module tb_pulseController_50MHz at E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v line 168
-add wave -position end  sim:/tb_pulseController_50MHz/dut/usb_rx
-add wave -position end  sim:/tb_pulseController_50MHz/dut/usb_tx
-add wave -position end  sim:/tb_pulseController_50MHz/dut/channel
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_uart/rx_valid
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_uart/rx_data
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_uart/tx_valid
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_uart/tx_data
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/opcode
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/data
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/delay
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/width
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/control
-add wave -position end  sim:/tb_pulseController_50MHz/dut/u_ins/rw_signal
-add wave -position 0  sim:/tb_pulseController_50MHz/dut/clk50
-add wave -position 1  sim:/tb_pulseController_50MHz/dut/clk100
-add wave -position 2  sim:/tb_pulseController_50MHz/dut/clk400
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/Quartus/projects/PHYS4310/simulation/modelsim/wave.do
-restart
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut File: E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v Line: 31
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'rb_clk'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'led_arr'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_uart'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_uart File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 80
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_tx_tick'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_rx_sample'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_pc'.  Expected 14, found 13.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_pc File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 369
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(369): [TFMPC] - Missing connection for port 'ready'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# 
-# === [PULSE ENGINE 50MHZ FUNCTIONAL TEST] ===
-# [TB] Resetting and waiting for PLL Lock...
-#  Note : MAX 10 PLL locked to incoming clock
-# Time: 90000  Instance: tb_pulseController_50MHz.dut.wiz_2.altpll_component.cycloneiii_pll.pll3
-# [TB] PLL Locked at 2000000. Internal clk400/clk100 active.
-# [TB] Programming Delay=0x10, Width=0x08...
-run
-# [TB] Sending START command...
-run
-# Break key hit
-# Simulation stop requested.
-add wave -position 6  sim:/tb_pulseController_50MHz/trig
-run
-# [TB] Triggering Pulse...
-# [TB] Channel bits observed: 0000
-# [TB] Sending STOP command...
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/pulseController.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:41 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/pulseController.v 
-# -- Compiling module pulseController
-# 
-# Top level modules:
-# 	pulseController
-# End time: 19:38:41 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:49 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/usb_cmd_gateway.v 
-# -- Compiling module usb_cmd_gateway
-# 
-# Top level modules:
-# 	usb_cmd_gateway
-# End time: 19:38:49 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/uart.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:49 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/uart.v 
-# -- Compiling module uart
-# 
-# Top level modules:
-# 	uart
-# End time: 19:38:49 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:49 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v 
-# -- Compiling module tb_pulseController_50MHz
-# 
-# Top level modules:
-# 	tb_pulseController_50MHz
-# End time: 19:38:49 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/storage.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:49 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/storage.v 
-# -- Compiling module storage
-# 
-# Top level modules:
-# 	storage
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/pulseHandler.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/pulseHandler.v 
-# -- Compiling module pulseHandler
-# 
-# Top level modules:
-# 	pulseHandler
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/pulseController.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/pulseController.v 
-# -- Compiling module pulseController
-# 
-# Top level modules:
-# 	pulseController
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/mux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/mux.v 
-# -- Compiling module muxBase
-# -- Compiling module mux
-# -- Compiling module mux4
-# -- Compiling module mux8
-# 
-# Top level modules:
-# 	mux8
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/mux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/mux.v 
-# -- Compiling module muxBase
-# -- Compiling module mux
-# -- Compiling module mux4
-# -- Compiling module mux8
-# 
-# Top level modules:
-# 	mux8
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/mux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/mux.v 
-# -- Compiling module muxBase
-# -- Compiling module mux
-# -- Compiling module mux4
-# -- Compiling module mux8
-# 
-# Top level modules:
-# 	mux8
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/mux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/mux.v 
-# -- Compiling module muxBase
-# -- Compiling module mux
-# -- Compiling module mux4
-# -- Compiling module mux8
-# 
-# Top level modules:
-# 	mux8
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/memory.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/memory.v 
-# -- Compiling module memory4c
-# -- Compiling module memory1c
-# 
-# Top level modules:
-# 	memory4c
-# 	memory1c
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/memory.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/memory.v 
-# -- Compiling module memory4c
-# -- Compiling module memory1c
-# 
-# Top level modules:
-# 	memory4c
-# 	memory1c
-# End time: 19:38:50 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/instructionHandler.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:50 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/instructionHandler.v 
-# -- Compiling module instructionHandler
-# 
-# Top level modules:
-# 	instructionHandler
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/deMux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/deMux.v 
-# -- Compiling module deMuxBase
-# -- Compiling module deMux
-# -- Compiling module deMux4
-# -- Compiling module deMux8
-# 
-# Top level modules:
-# 	deMux8
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/deMux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/deMux.v 
-# -- Compiling module deMuxBase
-# -- Compiling module deMux
-# -- Compiling module deMux4
-# -- Compiling module deMux8
-# 
-# Top level modules:
-# 	deMux8
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/deMux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/deMux.v 
-# -- Compiling module deMuxBase
-# -- Compiling module deMux
-# -- Compiling module deMux4
-# -- Compiling module deMux8
-# 
-# Top level modules:
-# 	deMux8
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/deMux.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/deMux.v 
-# -- Compiling module deMuxBase
-# -- Compiling module deMux
-# -- Compiling module deMux4
-# -- Compiling module deMux8
-# 
-# Top level modules:
-# 	deMux8
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310/db" E:/Quartus/projects/PHYS4310/db/clk_pll_50_to_400_altpll.v 
-# -- Compiling module clk_pll_50_to_400_altpll
-# 
-# Top level modules:
-# 	clk_pll_50_to_400_altpll
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/clk_pll_50_to_400.v 
-# -- Compiling module clk_pll_50_to_400
-# 
-# Top level modules:
-# 	clk_pll_50_to_400
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310/db E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310/db" E:/Quartus/projects/PHYS4310/db/clk_pll_10_to_50_altpll.v 
-# -- Compiling module clk_pll_10_to_50_altpll
-# 
-# Top level modules:
-# 	clk_pll_10_to_50_altpll
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/clk_pll_10_to_50.v 
-# -- Compiling module clk_pll_10_to_50
-# 
-# Top level modules:
-# 	clk_pll_10_to_50
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+E:/Quartus/projects/PHYS4310 E:/Quartus/projects/PHYS4310/fifo.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:51 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Quartus/projects/PHYS4310" E:/Quartus/projects/PHYS4310/fifo.v 
-# -- Compiling module async_fifo_8
-# 
-# Top level modules:
-# 	async_fifo_8
-# End time: 19:38:51 on Feb 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_pulseController_50MHz
-# Loading work.pulseController
-# Loading work.clk_pll_10_to_50
-# Loading work.clk_pll_50_to_400
-# Loading work.uart
-# Loading work.usb_cmd_gateway
-# Loading work.instructionHandler
-# Loading work.memory4c
-# Loading work.deMux4
-# Loading work.deMux
-# Loading work.mux4
-# Loading work.mux
-# Loading work.async_fifo_8
-# Loading work.pulseHandler
-# Loading work.deMuxBase
-# Loading work.muxBase
-# Loading work.storage
-# Loading work.deMux8
-# Loading work.mux8
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut File: E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v Line: 31
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'rb_clk'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/tb_pulseController_50MHz.v(31): [TFMPC] - Missing connection for port 'led_arr'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_uart'.  Expected 11, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_uart File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 80
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_tx_tick'.
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(80): [TFMPC] - Missing connection for port 'dbg_rx_sample'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'u_pc'.  Expected 14, found 13.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_pulseController_50MHz/dut/u_pc File: E:/Quartus/projects/PHYS4310/pulseController.v Line: 369
-# ** Warning: (vsim-3722) E:/Quartus/projects/PHYS4310/pulseController.v(369): [TFMPC] - Missing connection for port 'ready'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# 
-# === [PULSE ENGINE 50MHZ FUNCTIONAL TEST] ===
-# [TB] Resetting and waiting for PLL Lock...
-#  Note : MAX 10 PLL locked to incoming clock
-# Time: 90000  Instance: tb_pulseController_50MHz.dut.wiz_2.altpll_component.cycloneiii_pll.pll3
-# [TB] PLL Locked at 2000000. Internal clk400/clk100 active.
-# [TB] Programming Delay=0x10, Width=0x08...
-# [TB] Sending START command...
-# [TB] Triggering Pulse...
-# [TB] Channel bits observed: 0000
-# [TB] Sending STOP command...
-# End time: 19:45:34 on Feb 08,2026, Elapsed time: 0:24:58
+# Break in Module tb_pulseController_50MHz at C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v line 393
+# End time: 11:22:44 on Feb 23,2026, Elapsed time: 60:23:58
 # Errors: 0, Warnings: 8
