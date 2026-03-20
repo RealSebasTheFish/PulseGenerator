@@ -11,13 +11,13 @@ module pulseController (
 	output wire        trigled,
 	output wire [3:0]  channel,
 	output wire        led,
-	output wire [7:0]  led_arr
+	output wire [7:0]  led_arr,
+	input  wire        reset_n
 );
 
 	localparam [7:0] ACK  = 8'h06;
 	localparam [7:0] NACK = 8'h15;
 
-	wire reset_n = 1'b1;
 	wire trigerr;
 
 	// Define necessary wires to create PLL clocking logic
@@ -64,15 +64,21 @@ module pulseController (
 	reg  [1:0]  clock_check = 2'b00;
 	
 	// System that checks for activity on the external clock input by checking for edges every cycle of the onboard 50MHz clock and asserting rb_valid if activity is detected 
-	always @(posedge clk50) begin
-		clock_check <= {clock_check[0], rb_clk};
-		if (clock_check[0] ^ clock_check[1]) begin
-			detect   <= 16'h000A;
-			rb_valid <= 1'b1;
-		end else if (detect != 0) begin
-			detect <= detect - 1'b1;
+	always @(posedge clk50 or negedge reset_n) begin
+		if (!reset_n) begin
+			clock_check <= 2'b00;
+			detect      <= 16'd0;
+			rb_valid    <= 1'b0;
 		end else begin
-			rb_valid <= 1'b0;
+			clock_check <= {clock_check[0], rb_clk};
+			if (clock_check[0] ^ clock_check[1]) begin
+				detect   <= 16'h000A;
+				rb_valid <= 1'b1;
+			end else if (detect != 0) begin
+				detect <= detect - 1'b1;
+			end else begin
+				rb_valid <= 1'b0;
+			end
 		end
 	end
 
@@ -119,7 +125,7 @@ module pulseController (
 	
 	// Generate a cmd_valid_d signal that indicates to the instruction handler when a valid instruction has been fully loaded and parsed into the instruction reigsters from the USB command gateway
 	reg cmd_valid_d = 1'b0;
-	always @(posedge clk100)
+	always @(posedge clk100 or negedge rst100_n)
 		if (!rst100_n) cmd_valid_d <= 1'b0;
 		else           cmd_valid_d <= cmd_valid;
 
@@ -127,8 +133,9 @@ module pulseController (
 
 	// The command is passed to a temporary register for syncing to the 200MHz domain where the instruction handler runs
 	reg [15:0] ins_uart = 16'h0000;
-	always @(posedge clk100)
-		if (cmd_fire) ins_uart <= cmd_instr;
+	always @(posedge clk100 or negedge rst100_n)
+		if (!rst100_n) ins_uart <= 16'h0000;
+		else if (cmd_fire) ins_uart <= cmd_instr;
 		
 	// Command is syncronized in a similar way to the trig and reset signals
 	reg [15:0] ins_sync1 = 16'h0000, ins_sync2 = 16'h0000;
@@ -140,8 +147,9 @@ module pulseController (
 	
 	// A sticky signal is generated to insure it isnt missed if asserted between clock cycles (out of sync)
 	reg cmd_tgl = 1'b0;
-	always @(posedge clk100)
-		if (cmd_fire) cmd_tgl <= ~cmd_tgl;
+	always @(posedge clk100 or negedge rst100_n)
+		if (!rst100_n) cmd_tgl <= 1'b0;
+		else if (cmd_fire) cmd_tgl <= ~cmd_tgl;
 
 	reg [2:0] cmd_tgl_sync = 3'b000;
 	always @(posedge clk200 or negedge pc_reset_n)
@@ -227,7 +235,7 @@ module pulseController (
 		.channelS(eng_read ? eng_channelS : dec_delay[12:11]),
 		.write(wr_delay_clk),
 		.read(rd_delay_clk | eng_read),
-		.memReset(32'b0)
+		.memReset(~pc_reset_n)
 	);
 	
 	// Width configuaration memory
@@ -239,7 +247,7 @@ module pulseController (
 		.channelS(eng_read ? eng_channelS : dec_width[12:11]),
 		.write(wr_width_clk),
 		.read(rd_width_clk | eng_read),
-		.memReset(32'b0)
+		.memReset(~pc_reset_n)
 	);
 
 	reg rd_delay_d = 1'b0, rd_width_d = 1'b0;
@@ -357,17 +365,27 @@ module pulseController (
 	reg rb_req_sync1 = 1'b0, rb_req_sync2 = 1'b0;
 	reg rb_req_seen  = 1'b0;
 
-	always @(posedge clk100) begin
-		rb_req_sync1 <= rb_req_tgl_200_wire;
-		rb_req_sync2 <= rb_req_sync1;
+	always @(posedge clk100 or negedge rst100_n) begin
+		if (!rst100_n) begin
+			rb_req_sync1 <= 1'b0;
+			rb_req_sync2 <= 1'b0;
+		end else begin
+			rb_req_sync1 <= rb_req_tgl_200_wire;
+			rb_req_sync2 <= rb_req_sync1;
+		end
 	end
 
 	wire rb_req_edge_100 = rb_req_sync2 ^ rb_req_seen;
 
 	reg [7:0] rb_data_sync1 = 8'h00, rb_data_sync2 = 8'h00;
-	always @(posedge clk100) begin
-		rb_data_sync1 <= rb_xfer_data;
-		rb_data_sync2 <= rb_data_sync1;
+	always @(posedge clk100 or negedge rst100_n) begin
+		if (!rst100_n) begin
+			rb_data_sync1 <= 8'h00;
+			rb_data_sync2 <= 8'h00;
+		end else begin
+			rb_data_sync1 <= rb_xfer_data;
+			rb_data_sync2 <= rb_data_sync1;
+		end
 	end
 
 	reg rb_pending_req = 1'b0;
@@ -393,15 +411,18 @@ module pulseController (
 	assign tx_data  = tx_data_r;
 
 	reg resp_valid_d = 1'b0;
-	always @(posedge clk100)
-		resp_valid_d <= resp_valid;
+	always @(posedge clk100 or negedge rst100_n)
+		if (!rst100_n) resp_valid_d <= 1'b0;
+		else           resp_valid_d <= resp_valid;
 	wire resp_fire = resp_valid & ~resp_valid_d;
 
 	wire is_read_cmd_100 = cmd_fire &&
 												 ((cmd_instr[15:13] == 3'b101) || (cmd_instr[15:13] == 3'b110));
 
-	always @(posedge clk100) begin
-		if (stop_flush_any) begin
+	always @(posedge clk100 or negedge rst100_n) begin
+		if (!rst100_n) begin
+			ack_waiting <= 1'b0;
+		end else if (stop_flush_any) begin
 			ack_waiting <= 1'b0;
 		end else begin
 			if (is_read_cmd_100)
@@ -411,8 +432,19 @@ module pulseController (
 		end
 	end
 
-	always @(posedge clk100) begin
-		if (stop_flush_any) begin
+	always @(posedge clk100 or negedge rst100_n) begin
+		if (!rst100_n) begin
+			txq_wptr       <= 0;
+			txq_rptr       <= 0;
+			txq_count      <= 0;
+			resp_pending   <= 0;
+			ack_inflight   <= 1'b0;
+			tx_valid_r     <= 1'b0;
+			tx_data_r      <= 8'h00;
+			rb_pending_req <= 1'b0;
+			rb_req_seen    <= 1'b0;
+			rb_ack_tgl_r   <= 1'b0;
+		end else if (stop_flush_any) begin
 			txq_wptr       <= 0;
 			txq_rptr       <= 0;
 			txq_count      <= 0;

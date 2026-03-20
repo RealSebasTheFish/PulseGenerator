@@ -20,6 +20,30 @@ led_arr[4] << pulseHandler:u_pc.listening
 led_arr[5] << stop_to_engine.DB_MAX_OUTPUT_PORT_TYPE
 led_arr[6] << clk_pll_50_to_200:wiz_2.locked
 led_arr[7] << rb_valid.DB_MAX_OUTPUT_PORT_TYPE
+reset_n => async_ok_n.IN1
+reset_n => _.IN1
+reset_n => _.IN1
+reset_n => rb_valid.ACLR
+reset_n => detect[0].ACLR
+reset_n => detect[1].ACLR
+reset_n => detect[2].ACLR
+reset_n => detect[3].ACLR
+reset_n => detect[4].ACLR
+reset_n => detect[5].ACLR
+reset_n => detect[6].ACLR
+reset_n => detect[7].ACLR
+reset_n => detect[8].ACLR
+reset_n => detect[9].ACLR
+reset_n => detect[10].ACLR
+reset_n => detect[11].ACLR
+reset_n => detect[12].ACLR
+reset_n => detect[13].ACLR
+reset_n => detect[14].ACLR
+reset_n => detect[15].ACLR
+reset_n => clock_check[0].ACLR
+reset_n => clock_check[1].ACLR
+reset_n => _.IN1
+reset_n => _.IN1
 
 
 |pulseController|clk_pll_10_to_50:wiz_1

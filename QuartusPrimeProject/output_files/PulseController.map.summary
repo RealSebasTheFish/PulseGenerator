@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Mar 18 19:01:05 2026
+Analysis & Synthesis Status : Successful - Fri Mar 20 11:31:21 2026
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : PulseController
 Top-level Entity Name : pulseController
 Family : MAX 10
 Total logic elements : 3,411
-    Total combinational functions : 2,476
-    Dedicated logic registers : 2,196
-Total registers : 2196
-Total pins : 21
+    Total combinational functions : 2,499
+    Dedicated logic registers : 2,199
+Total registers : 2199
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

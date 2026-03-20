@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PulseController
-Wed Mar 18 19:01:05 2026
+Fri Mar 20 11:31:21 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -391,16 +391,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 18 19:01:05 2026          ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 20 11:31:21 2026          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; PulseController                                ;
 ; Top-level Entity Name              ; pulseController                                ;
 ; Family                             ; MAX 10                                         ;
 ; Total logic elements               ; 3,411                                          ;
-;     Total combinational functions  ; 2,476                                          ;
-;     Dedicated logic registers      ; 2,196                                          ;
-; Total registers                    ; 2196                                           ;
-; Total pins                         ; 21                                             ;
+;     Total combinational functions  ; 2,499                                          ;
+;     Dedicated logic registers      ; 2,199                                          ;
+; Total registers                    ; 2199                                           ;
+; Total pins                         ; 22                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -504,45 +504,46 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processors 8-10        ;   0.1%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; deMux.v                          ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v                       ;         ;
-; instructionHandler.v             ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/instructionHandler.v          ;         ;
-; memory.v                         ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v                      ;         ;
-; mux.v                            ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v                         ;         ;
-; pulseController.v                ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v             ;         ;
-; pulseHandler.v                   ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v                ;         ;
-; storage.v                        ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/storage.v                     ;         ;
-; uart.v                           ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v                        ;         ;
-; usb_cmd_gateway.v                ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v             ;         ;
-; clk_pll_10_to_50.v               ; yes             ; User Wizard-Generated File   ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v            ;         ;
-; clk_pll_50_to_200.v              ; yes             ; User Wizard-Generated File   ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_200.v           ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altpll.tdf                                               ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                           ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_pll.inc                                          ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratixii_pll.inc                                        ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/cycloneii_pll.inc                                        ;         ;
-; db/clk_pll_10_to_50_altpll.v     ; yes             ; Auto-Generated Megafunction  ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v  ;         ;
-; db/clk_pll_50_to_200_altpll.v    ; yes             ; Auto-Generated Megafunction  ; C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_50_to_200_altpll.v ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; deMux.v                          ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v                       ;         ;
+; instructionHandler.v             ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/instructionHandler.v          ;         ;
+; memory.v                         ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v                      ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v                         ;         ;
+; pulseController.v                ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v             ;         ;
+; pulseHandler.v                   ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseHandler.v                ;         ;
+; storage.v                        ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/storage.v                     ;         ;
+; uart.v                           ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v                        ;         ;
+; usb_cmd_gateway.v                ; yes             ; User Verilog HDL File        ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/usb_cmd_gateway.v             ;         ;
+; clk_pll_10_to_50.v               ; yes             ; User Wizard-Generated File   ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_10_to_50.v            ;         ;
+; clk_pll_50_to_200.v              ; yes             ; User Wizard-Generated File   ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_200.v           ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altpll.tdf                                    ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_pll.inc                               ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratixii_pll.inc                             ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/cycloneii_pll.inc                             ;         ;
+; db/clk_pll_10_to_50_altpll.v     ; yes             ; Auto-Generated Megafunction  ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v  ;         ;
+; db/clk_pll_50_to_200_altpll.v    ; yes             ; Auto-Generated Megafunction  ; C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/db/clk_pll_50_to_200_altpll.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -552,21 +553,21 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 ; Estimated Total logic elements              ; 3,411                                                                                                    ;
 ;                                             ;                                                                                                          ;
-; Total combinational functions               ; 2476                                                                                                     ;
+; Total combinational functions               ; 2499                                                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                                                          ;
-;     -- 4 input functions                    ; 1632                                                                                                     ;
-;     -- 3 input functions                    ; 119                                                                                                      ;
-;     -- <=2 input functions                  ; 725                                                                                                      ;
+;     -- 4 input functions                    ; 1624                                                                                                     ;
+;     -- 3 input functions                    ; 149                                                                                                      ;
+;     -- <=2 input functions                  ; 726                                                                                                      ;
 ;                                             ;                                                                                                          ;
 ; Logic elements by mode                      ;                                                                                                          ;
-;     -- normal mode                          ; 1892                                                                                                     ;
+;     -- normal mode                          ; 1915                                                                                                     ;
 ;     -- arithmetic mode                      ; 584                                                                                                      ;
 ;                                             ;                                                                                                          ;
-; Total registers                             ; 2196                                                                                                     ;
-;     -- Dedicated logic registers            ; 2196                                                                                                     ;
+; Total registers                             ; 2199                                                                                                     ;
+;     -- Dedicated logic registers            ; 2199                                                                                                     ;
 ;     -- I/O registers                        ; 0                                                                                                        ;
 ;                                             ;                                                                                                          ;
-; I/O pins                                    ; 21                                                                                                       ;
+; I/O pins                                    ; 22                                                                                                       ;
 ;                                             ;                                                                                                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                                        ;
 ;                                             ;                                                                                                          ;
@@ -574,9 +575,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                                        ;
 ;                                             ;                                                                                                          ;
 ; Maximum fan-out node                        ; clk_pll_50_to_200:wiz_2|altpll:altpll_component|clk_pll_50_to_200_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 2179                                                                                                     ;
-; Total fan-out                               ; 17152                                                                                                    ;
-; Average fan-out                             ; 3.64                                                                                                     ;
+; Maximum fan-out                             ; 2183                                                                                                     ;
+; Total fan-out                               ; 17343                                                                                                    ;
+; Average fan-out                             ; 3.66                                                                                                     ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -585,10 +586,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                         ; Entity Name              ; Library Name ;
 +----------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |pulseController                                   ; 2476 (639)          ; 2196 (442)                ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |pulseController                                                                                            ; pulseController          ; work         ;
-;    |clk_pll_50_to_200:wiz_2|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2                                                                    ; clk_pll_50_to_200        ; work         ;
-;       |altpll:altpll_component|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2|altpll:altpll_component                                            ; altpll                   ; work         ;
-;          |clk_pll_50_to_200_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2|altpll:altpll_component|clk_pll_50_to_200_altpll:auto_generated    ; clk_pll_50_to_200_altpll ; work         ;
+; |pulseController                                   ; 2499 (609)          ; 2199 (442)                ; 0           ; 0          ; 0            ; 0       ; 0         ; 22   ; 0            ; 0          ; |pulseController                                                                                            ; pulseController          ; work         ;
+;    |clk_pll_50_to_200:wiz_2|                       ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2                                                                    ; clk_pll_50_to_200        ; work         ;
+;       |altpll:altpll_component|                    ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2|altpll:altpll_component                                            ; altpll                   ; work         ;
+;          |clk_pll_50_to_200_altpll:auto_generated| ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|clk_pll_50_to_200:wiz_2|altpll:altpll_component|clk_pll_50_to_200_altpll:auto_generated    ; clk_pll_50_to_200_altpll ; work         ;
 ;    |instructionHandler:u_ins|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|instructionHandler:u_ins                                                                   ; instructionHandler       ; work         ;
 ;    |memory4c:u_delays|                             ; 344 (10)            ; 256 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|memory4c:u_delays                                                                          ; memory4c                 ; work         ;
 ;       |deMux8:gen_blockMux[0].blockMux|            ; 35 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|memory4c:u_delays|deMux8:gen_blockMux[0].blockMux                                          ; deMux8                   ; work         ;
@@ -944,9 +945,9 @@ https://fpgasoftware.intel.com/eula.
 ;       |storage:block[7]|                           ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|memory4c:u_widths|storage:block[7]                                                         ; storage                  ; work         ;
 ;       |storage:block[8]|                           ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|memory4c:u_widths|storage:block[8]                                                         ; storage                  ; work         ;
 ;       |storage:block[9]|                           ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|memory4c:u_widths|storage:block[9]                                                         ; storage                  ; work         ;
-;    |pulseHandler:u_pc|                             ; 972 (972)           ; 1078 (1078)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|pulseHandler:u_pc                                                                          ; pulseHandler             ; work         ;
-;    |uart:u_uart|                                   ; 88 (88)             ; 79 (79)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|uart:u_uart                                                                                ; uart                     ; work         ;
-;    |usb_cmd_gateway:u_cmd|                         ; 86 (86)             ; 85 (85)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|usb_cmd_gateway:u_cmd                                                                      ; usb_cmd_gateway          ; work         ;
+;    |pulseHandler:u_pc|                             ; 971 (971)           ; 1077 (1077)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|pulseHandler:u_pc                                                                          ; pulseHandler             ; work         ;
+;    |uart:u_uart|                                   ; 103 (103)           ; 79 (79)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|uart:u_uart                                                                                ; uart                     ; work         ;
+;    |usb_cmd_gateway:u_cmd|                         ; 124 (124)           ; 88 (88)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pulseController|usb_cmd_gateway:u_cmd                                                                      ; usb_cmd_gateway          ; work         ;
 +----------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -991,31 +992,28 @@ Encoding Type:  One-Hot
 +---------------+--------------+--------------+--------------+-------------+---------------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                     ;
-+-------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; Register name                                                                                         ; Reason for Removal                             ;
-+-------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; clk_pll_50_to_200:wiz_2|altpll:altpll_component|clk_pll_50_to_200_altpll:auto_generated|pll_lock_sync ; Stuck at VCC due to stuck port data_in         ;
-; usb_cmd_gateway:u_cmd|ack_data[3,5..7]                                                                ; Stuck at GND due to stuck port data_in         ;
-; usb_cmd_gateway:u_cmd|ack_data[2]                                                                     ; Stuck at VCC due to stuck port data_in         ;
-; usb_cmd_gateway:u_cmd|resp_data[2]                                                                    ; Stuck at VCC due to stuck port data_in         ;
-; usb_cmd_gateway:u_cmd|resp_data[3,5..7]                                                               ; Stuck at GND due to stuck port data_in         ;
-; usb_cmd_gateway:u_cmd|resp_data[4]                                                                    ; Merged with usb_cmd_gateway:u_cmd|resp_data[0] ;
-; usb_cmd_gateway:u_cmd|ack_data[4]                                                                     ; Merged with usb_cmd_gateway:u_cmd|ack_data[0]  ;
-; usb_cmd_gateway:u_cmd|ack_data[0]                                                                     ; Merged with usb_cmd_gateway:u_cmd|ack_data[1]  ;
-; usb_cmd_gateway:u_cmd|resp_data[1]                                                                    ; Merged with usb_cmd_gateway:u_cmd|resp_data[0] ;
-; uart:u_uart|tx_shift[9]                                                                               ; Stuck at VCC due to stuck port data_in         ;
-; pulseHandler:u_pc|state~4                                                                             ; Lost fanout                                    ;
-; pulseHandler:u_pc|state~5                                                                             ; Lost fanout                                    ;
-; pulseHandler:u_pc|state~6                                                                             ; Lost fanout                                    ;
-; usb_cmd_gateway:u_cmd|state~8                                                                         ; Lost fanout                                    ;
-; usb_cmd_gateway:u_cmd|state~9                                                                         ; Lost fanout                                    ;
-; usb_cmd_gateway:u_cmd|state~10                                                                        ; Lost fanout                                    ;
-; txq_rptr[5]                                                                                           ; Lost fanout                                    ;
-; txq_wptr[5]                                                                                           ; Lost fanout                                    ;
-; Total Number of Removed Registers = 24                                                                ;                                                ;
-+-------------------------------------------------------------------------------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++----------------------------------------+------------------------------------------------+
+; Register name                          ; Reason for Removal                             ;
++----------------------------------------+------------------------------------------------+
+; usb_cmd_gateway:u_cmd|ack_data[3,5..7] ; Stuck at GND due to stuck port data_in         ;
+; usb_cmd_gateway:u_cmd|ack_data[2]      ; Stuck at VCC due to stuck port data_in         ;
+; usb_cmd_gateway:u_cmd|resp_data[4]     ; Merged with usb_cmd_gateway:u_cmd|resp_data[0] ;
+; usb_cmd_gateway:u_cmd|ack_data[4]      ; Merged with usb_cmd_gateway:u_cmd|ack_data[0]  ;
+; usb_cmd_gateway:u_cmd|resp_data[5..7]  ; Merged with usb_cmd_gateway:u_cmd|resp_data[3] ;
+; usb_cmd_gateway:u_cmd|resp_data[3]     ; Stuck at GND due to stuck port data_in         ;
+; uart:u_uart|tx_shift[9]                ; Stuck at VCC due to stuck port data_in         ;
+; pulseHandler:u_pc|state~4              ; Lost fanout                                    ;
+; pulseHandler:u_pc|state~5              ; Lost fanout                                    ;
+; pulseHandler:u_pc|state~6              ; Lost fanout                                    ;
+; usb_cmd_gateway:u_cmd|state~8          ; Lost fanout                                    ;
+; usb_cmd_gateway:u_cmd|state~9          ; Lost fanout                                    ;
+; usb_cmd_gateway:u_cmd|state~10         ; Lost fanout                                    ;
+; txq_rptr[5]                            ; Lost fanout                                    ;
+; txq_wptr[5]                            ; Lost fanout                                    ;
+; Total Number of Removed Registers = 20 ;                                                ;
++----------------------------------------+------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -1023,15 +1021,7 @@ Encoding Type:  One-Hot
 +-----------------------------------+---------------------------+----------------------------------------+
 ; Register name                     ; Reason for Removal        ; Registers Removed due to This Register ;
 +-----------------------------------+---------------------------+----------------------------------------+
-; usb_cmd_gateway:u_cmd|ack_data[7] ; Stuck at GND              ; usb_cmd_gateway:u_cmd|resp_data[7]     ;
-;                                   ; due to stuck port data_in ;                                        ;
-; usb_cmd_gateway:u_cmd|ack_data[6] ; Stuck at GND              ; usb_cmd_gateway:u_cmd|resp_data[6]     ;
-;                                   ; due to stuck port data_in ;                                        ;
-; usb_cmd_gateway:u_cmd|ack_data[5] ; Stuck at GND              ; usb_cmd_gateway:u_cmd|resp_data[5]     ;
-;                                   ; due to stuck port data_in ;                                        ;
 ; usb_cmd_gateway:u_cmd|ack_data[3] ; Stuck at GND              ; usb_cmd_gateway:u_cmd|resp_data[3]     ;
-;                                   ; due to stuck port data_in ;                                        ;
-; usb_cmd_gateway:u_cmd|ack_data[2] ; Stuck at VCC              ; usb_cmd_gateway:u_cmd|resp_data[2]     ;
 ;                                   ; due to stuck port data_in ;                                        ;
 +-----------------------------------+---------------------------+----------------------------------------+
 
@@ -1041,12 +1031,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2196  ;
-; Number of registers using Synchronous Clear  ; 30    ;
-; Number of registers using Synchronous Load   ; 588   ;
-; Number of registers using Asynchronous Clear ; 1177  ;
+; Total registers                              ; 2199  ;
+; Number of registers using Synchronous Clear  ; 35    ;
+; Number of registers using Synchronous Load   ; 583   ;
+; Number of registers using Asynchronous Clear ; 1280  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2065  ;
+; Number of registers using Clock Enable       ; 2066  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1058,11 +1048,11 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; uart:u_uart|tx_shift[0]                 ; 2       ;
 ; uart:u_uart|tx_shift[1]                 ; 1       ;
-; pulseHandler:u_pc|trig_rearm            ; 2       ;
+; pulseHandler:u_pc|trig_rearm            ; 3       ;
 ; uart:u_uart|tx_shift[2]                 ; 1       ;
 ; uart:u_uart|tx_shift[3]                 ; 1       ;
-; uart:u_uart|start_det[0]                ; 6       ;
-; uart:u_uart|start_det[1]                ; 5       ;
+; uart:u_uart|start_det[1]                ; 3       ;
+; uart:u_uart|start_det[0]                ; 4       ;
 ; uart:u_uart|rx_sync2                    ; 2       ;
 ; uart:u_uart|tx_shift[4]                 ; 1       ;
 ; uart:u_uart|rx_sync1                    ; 1       ;
@@ -1079,107 +1069,111 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|uart:u_uart|tx_bit[2]                                                   ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |pulseController|tx_data_r[0]                                                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|uart:u_uart|rx_bit[1]                                                   ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|ack_delay_cnt[7]                                  ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[0][6]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[0][0]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[1][5]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[1][0]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[2][2]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[2][4]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[3][2]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[3][4]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[4][5]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[4][4]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[5][3]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[5][1]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[6][6]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[6][4]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[7][5]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[7][0]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[8][7]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[8][4]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[9][7]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[9][1]                                                           ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[10][5]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[10][0]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[11][5]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[11][1]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[12][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[12][0]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[13][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[13][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[14][3]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[14][0]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[15][5]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[15][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[16][6]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[16][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[17][5]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[17][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[18][7]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[18][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[19][6]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[19][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[20][7]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[20][1]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[21][3]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[21][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[22][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[22][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[23][6]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[23][1]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[24][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[24][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[25][5]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[25][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[26][6]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[26][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[27][6]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[27][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[28][3]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[28][4]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[29][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[29][1]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[30][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[30][1]                                                          ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseController|txq_mem[31][2]                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |pulseController|txq_mem[31][0]                                                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |pulseController|txq_wptr[5]                                                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseController|rb_q0_data[0]                                                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseController|rb_byte_r[0]                                                            ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |pulseController|tx_data_r[6]                                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|rx_crc[1]                                         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|cmd_instr[2]                                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[0][7]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[0][4]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[1][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[1][4]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[2][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[2][0]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[3][7]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[3][1]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[4][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[4][1]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[5][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[5][1]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[6][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[6][1]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[7][7]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[7][2]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[8][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[8][2]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[9][6]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[9][2]                                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[10][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[10][0]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[11][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[11][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[12][5]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[12][4]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[13][5]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[13][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[14][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[14][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[15][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[15][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[16][7]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[16][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[17][7]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[17][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[18][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[18][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[19][5]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[19][4]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[20][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[20][4]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[21][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[21][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[22][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[22][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[23][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[23][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[24][6]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[24][2]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[25][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[25][4]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[26][5]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[26][4]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[27][3]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[27][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[28][7]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[28][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[29][7]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[29][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[30][7]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[30][1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[31][5]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|txq_mem[31][2]                                                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|resp_data[1]                                      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |pulseController|txq_wptr[2]                                                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseController|rb_q0_data[1]                                                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseController|rb_byte_r[2]                                                            ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|pulse_timer[3]                                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|start_stretch[3]                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|stop_stretch[3]                                                         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pulseController|detect[12]                                                              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pulseController|uart:u_uart|tx_cnt[7]                                                   ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pulseController|uart:u_uart|rx_cnt[11]                                                  ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |pulseController|txq_count[5]                                                            ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |pulseController|uart:u_uart|os_index[5]                                                 ;
-; 4:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|index[7]                                          ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|channel[0]                                            ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[0][13]                                      ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[0][9]                                       ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[1][34]                                      ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[1][27]                                      ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[2][3]                                       ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[2][12]                                      ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[3][26]                                      ;
-; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[3][55]                                      ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|crc[15]                                           ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[0][0]                                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|start_stretch[0]                                                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|stop_stretch[0]                                                         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pulseController|detect[14]                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|uart:u_uart|tx_bit[3]                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|uart:u_uart|rx_bit[2]                                                   ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|ack_delay_cnt[4]                                  ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |pulseController|txq_count[6]                                                            ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |pulseController|uart:u_uart|os_index[3]                                                 ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |pulseController|uart:u_uart|tx_cnt[3]                                                   ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |pulseController|uart:u_uart|rx_cnt[1]                                                   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|channel[3]                                            ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[0][31]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[0][34]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[1][41]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[1][19]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[2][31]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[2][52]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|width_cnt[3][31]                                      ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; Yes        ; |pulseController|pulseHandler:u_pc|delay_cnt[3][36]                                      ;
+; 6:1                ; 19 bits   ; 76 LEs        ; 19 LEs               ; 57 LEs                 ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|crc[7]                                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pulseController|usb_cmd_gateway:u_cmd|crc[15]                                           ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[0][1]                                           ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[1][0]                                           ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[2][0]                                           ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[3][0]                                           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |pulseController|uart:u_uart|tx_shift[7]                                                 ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pulseController|pulseHandler:u_pc|phase[3][1]                                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |pulseController|uart:u_uart|tx_shift[2]                                                 ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pulseController|pulseHandler:u_pc|ch_iter                                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pulseController|usb_cmd_gateway:u_cmd|state                                             ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |pulseController|comb                                                                    ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |pulseController|comb                                                                    ;
 ; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |pulseController|Mux7                                                                    ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |pulseController|memory4c:u_delays|mux4:memChannelOutput|mux:final|muxBase:mine[6]|my_or ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |pulseController|memory4c:u_widths|mux4:memChannelOutput|mux:final|muxBase:mine[0]|my_or ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |pulseController|memory4c:u_delays|mux4:memChannelOutput|mux:final|muxBase:mine[0]|my_or ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |pulseController|memory4c:u_widths|mux4:memChannelOutput|mux:final|muxBase:mine[5]|my_or ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
@@ -5268,22 +5262,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "memory4c:u_widths" ;
-+----------+-------+----------+-----------------+
-; Port     ; Type  ; Severity ; Details         ;
-+----------+-------+----------+-----------------+
-; memReset ; Input ; Info     ; Stuck at GND    ;
-+----------+-------+----------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory4c:u_widths"                                                                                                                                    ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                            ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; memReset ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "memReset[31..1]" will be connected to GND. ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "memory4c:u_delays" ;
-+----------+-------+----------+-----------------+
-; Port     ; Type  ; Severity ; Details         ;
-+----------+-------+----------+-----------------+
-; memReset ; Input ; Info     ; Stuck at GND    ;
-+----------+-------+----------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory4c:u_delays"                                                                                                                                    ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                            ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; memReset ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "memReset[31..1]" will be connected to GND. ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -5300,7 +5294,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
-; rst    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; usbled ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -5310,7 +5303,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                                                  ;
 +---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; rst           ; Input  ; Info     ; Stuck at GND                                                                                             ;
 ; dbg_tx_tick   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 ; dbg_rx_sample ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -5321,7 +5313,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type  ; Severity ; Details                                                                                                                                      ;
 +-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; areset    ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
 ; clkswitch ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; inclk1    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 +-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -5332,7 +5323,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
-; areset ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; c0     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; locked ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -5343,32 +5333,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 2196                        ;
-;     CLR               ; 84                          ;
+; boundary_port         ; 22                          ;
+; cycloneiii_ff         ; 2199                        ;
+;     CLR               ; 113                         ;
 ;     CLR SLD           ; 3                           ;
-;     ENA               ; 875                         ;
-;     ENA CLR           ; 578                         ;
-;     ENA CLR SLD       ; 512                         ;
-;     ENA SCLR          ; 28                          ;
-;     ENA SLD           ; 72                          ;
-;     SCLR              ; 2                           ;
-;     SLD               ; 1                           ;
-;     plain             ; 41                          ;
-; cycloneiii_lcell_comb ; 2480                        ;
+;     ENA               ; 843                         ;
+;     ENA CLR           ; 619                         ;
+;     ENA CLR SCLR      ; 17                          ;
+;     ENA CLR SLD       ; 528                         ;
+;     ENA SCLR          ; 11                          ;
+;     ENA SLD           ; 48                          ;
+;     SCLR              ; 7                           ;
+;     SLD               ; 4                           ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 2504                        ;
 ;     arith             ; 584                         ;
 ;         2 data inputs ; 579                         ;
 ;         3 data inputs ; 5                           ;
-;     normal            ; 1896                        ;
+;     normal            ; 1920                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 29                          ;
-;         2 data inputs ; 120                         ;
-;         3 data inputs ; 114                         ;
-;         4 data inputs ; 1632                        ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 121                         ;
+;         3 data inputs ; 144                         ;
+;         4 data inputs ; 1624                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.87                        ;
+; Average LUT depth     ; 4.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5377,7 +5368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -5387,74 +5378,74 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Mar 18 19:00:51 2026
+    Info: Processing started: Fri Mar 20 11:30:57 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PulseController -c PulseController
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file testtop.v
-    Info (12023): Found entity 1: testtop File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/testtop.v Line: 1
+    Info (12023): Found entity 1: testtop File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/testtop.v Line: 1
 Info (12021): Found 4 design units, including 4 entities, in source file demux.v
-    Info (12023): Found entity 1: deMuxBase File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 3
-    Info (12023): Found entity 2: deMux File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 14
-    Info (12023): Found entity 3: deMux4 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 22
-    Info (12023): Found entity 4: deMux8 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 33
+    Info (12023): Found entity 1: deMuxBase File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 3
+    Info (12023): Found entity 2: deMux File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 14
+    Info (12023): Found entity 3: deMux4 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 22
+    Info (12023): Found entity 4: deMux8 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
-    Info (12023): Found entity 1: async_fifo_8 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/fifo.v Line: 2
+    Info (12023): Found entity 1: async_fifo_8 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/fifo.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file instructionhandler.v
-    Info (12023): Found entity 1: instructionHandler File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/instructionHandler.v Line: 2
+    Info (12023): Found entity 1: instructionHandler File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/instructionHandler.v Line: 2
 Info (12021): Found 2 design units, including 2 entities, in source file memory.v
-    Info (12023): Found entity 1: memory4c File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 26
-    Info (12023): Found entity 2: memory1c File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 278
-Warning (10463): Verilog HDL Declaration warning at mux.v(29): "final" is SystemVerilog-2005 keyword File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 29
-Warning (10463): Verilog HDL Declaration warning at mux.v(40): "final" is SystemVerilog-2005 keyword File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 40
-Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 13
+    Info (12023): Found entity 1: memory4c File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 26
+    Info (12023): Found entity 2: memory1c File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 278
+Warning (10463): Verilog HDL Declaration warning at mux.v(29): "final" is SystemVerilog-2005 keyword File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 29
+Warning (10463): Verilog HDL Declaration warning at mux.v(40): "final" is SystemVerilog-2005 keyword File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 40
+Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 13
 Info (12021): Found 4 design units, including 4 entities, in source file mux.v
-    Info (12023): Found entity 1: muxBase File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 3
-    Info (12023): Found entity 2: mux File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 13
-    Info (12023): Found entity 3: mux4 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 21
-    Info (12023): Found entity 4: mux8 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 32
+    Info (12023): Found entity 1: muxBase File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 3
+    Info (12023): Found entity 2: mux File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 13
+    Info (12023): Found entity 3: mux4 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 21
+    Info (12023): Found entity 4: mux8 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file pulsecontroller.v
-    Info (12023): Found entity 1: pulseController File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 3
+    Info (12023): Found entity 1: pulseController File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pulsehandler.v
-    Info (12023): Found entity 1: pulseHandler File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v Line: 3
+    Info (12023): Found entity 1: pulseHandler File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseHandler.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file storage.v
-    Info (12023): Found entity 1: storage File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/storage.v Line: 3
+    Info (12023): Found entity 1: storage File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/storage.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file uart.v
-    Info (12023): Found entity 1: uart File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 2
+    Info (12023): Found entity 1: uart File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file usb_cmd_gateway.v
-    Info (12023): Found entity 1: usb_cmd_gateway File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v Line: 2
+    Info (12023): Found entity 1: usb_cmd_gateway File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/usb_cmd_gateway.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file clk_pll_50_to_400.v
-    Info (12023): Found entity 1: clk_pll_50_to_400 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_400.v Line: 40
+    Info (12023): Found entity 1: clk_pll_50_to_400 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_400.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pulsecontroller_50mhz.v
-    Info (12023): Found entity 1: tb_pulseController_50MHz File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/tb_pulseController_50MHz.v Line: 9
+    Info (12023): Found entity 1: tb_pulseController_50MHz File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/tb_pulseController_50MHz.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file uart_test.v
-    Info (12023): Found entity 1: uart_test File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart_test.v Line: 1
+    Info (12023): Found entity 1: uart_test File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart_test.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clk_pll_10_to_50.v
-    Info (12023): Found entity 1: clk_pll_10_to_50 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v Line: 40
+    Info (12023): Found entity 1: clk_pll_10_to_50 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_10_to_50.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file clkswitcher/synthesis/clkswitcher.v
-    Info (12023): Found entity 1: clkswitcher File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clkswitcher/synthesis/clkswitcher.v Line: 6
+    Info (12023): Found entity 1: clkswitcher File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clkswitcher/synthesis/clkswitcher.v Line: 6
 Info (12021): Found 2 design units, including 2 entities, in source file clkswitcher/synthesis/submodules/clkswitcher_altclkctrl_0.v
-    Info (12023): Found entity 1: clkswitcher_altclkctrl_0_sub File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clkswitcher/synthesis/submodules/clkswitcher_altclkctrl_0.v Line: 29
-    Info (12023): Found entity 2: clkswitcher_altclkctrl_0 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clkswitcher/synthesis/submodules/clkswitcher_altclkctrl_0.v Line: 108
+    Info (12023): Found entity 1: clkswitcher_altclkctrl_0_sub File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clkswitcher/synthesis/submodules/clkswitcher_altclkctrl_0.v Line: 29
+    Info (12023): Found entity 2: clkswitcher_altclkctrl_0 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clkswitcher/synthesis/submodules/clkswitcher_altclkctrl_0.v Line: 108
 Info (12021): Found 1 design units, including 1 entities, in source file clk_pll_50_to_200.v
-    Info (12023): Found entity 1: clk_pll_50_to_200 File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_200.v Line: 40
+    Info (12023): Found entity 1: clk_pll_50_to_200 File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_200.v Line: 40
 Info (12127): Elaborating entity "pulseController" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at pulseController.v(179): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 179
-Warning (10230): Verilog HDL assignment warning at pulseController.v(205): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 205
-Warning (10230): Verilog HDL assignment warning at pulseController.v(208): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 208
-Warning (10230): Verilog HDL assignment warning at pulseController.v(433): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 433
-Warning (10230): Verilog HDL assignment warning at pulseController.v(434): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 434
-Warning (10230): Verilog HDL assignment warning at pulseController.v(435): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 435
-Warning (10230): Verilog HDL assignment warning at pulseController.v(441): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 441
-Warning (10230): Verilog HDL assignment warning at pulseController.v(442): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 442
-Warning (10230): Verilog HDL assignment warning at pulseController.v(453): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 453
-Warning (10230): Verilog HDL assignment warning at pulseController.v(454): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 454
-Warning (10230): Verilog HDL assignment warning at pulseController.v(456): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 456
-Warning (10034): Output port "led" at pulseController.v(13) has no driver File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 13
-Info (12128): Elaborating entity "clk_pll_10_to_50" for hierarchy "clk_pll_10_to_50:wiz_1" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 32
-Info (12128): Elaborating entity "altpll" for hierarchy "clk_pll_10_to_50:wiz_1|altpll:altpll_component" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
-Info (12130): Elaborated megafunction instantiation "clk_pll_10_to_50:wiz_1|altpll:altpll_component" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
-Info (12133): Instantiated megafunction "clk_pll_10_to_50:wiz_1|altpll:altpll_component" with the following parameter: File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
+Warning (10230): Verilog HDL assignment warning at pulseController.v(187): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 187
+Warning (10230): Verilog HDL assignment warning at pulseController.v(213): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 213
+Warning (10230): Verilog HDL assignment warning at pulseController.v(216): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 216
+Warning (10230): Verilog HDL assignment warning at pulseController.v(465): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 465
+Warning (10230): Verilog HDL assignment warning at pulseController.v(466): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 466
+Warning (10230): Verilog HDL assignment warning at pulseController.v(467): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 467
+Warning (10230): Verilog HDL assignment warning at pulseController.v(473): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 473
+Warning (10230): Verilog HDL assignment warning at pulseController.v(474): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 474
+Warning (10230): Verilog HDL assignment warning at pulseController.v(485): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 485
+Warning (10230): Verilog HDL assignment warning at pulseController.v(486): truncated value with size 32 to match size of target (7) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 486
+Warning (10230): Verilog HDL assignment warning at pulseController.v(488): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 488
+Warning (10034): Output port "led" at pulseController.v(13) has no driver File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 13
+Info (12128): Elaborating entity "clk_pll_10_to_50" for hierarchy "clk_pll_10_to_50:wiz_1" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 32
+Info (12128): Elaborating entity "altpll" for hierarchy "clk_pll_10_to_50:wiz_1|altpll:altpll_component" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
+Info (12130): Elaborated megafunction instantiation "clk_pll_10_to_50:wiz_1|altpll:altpll_component" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
+Info (12133): Instantiated megafunction "clk_pll_10_to_50:wiz_1|altpll:altpll_component" with the following parameter: File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_10_to_50.v Line: 104
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -5511,12 +5502,12 @@ Info (12133): Instantiated megafunction "clk_pll_10_to_50:wiz_1|altpll:altpll_co
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/clk_pll_10_to_50_altpll.v
-    Info (12023): Found entity 1: clk_pll_10_to_50_altpll File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v Line: 31
+    Info (12023): Found entity 1: clk_pll_10_to_50_altpll File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v Line: 31
 Info (12128): Elaborating entity "clk_pll_10_to_50_altpll" for hierarchy "clk_pll_10_to_50:wiz_1|altpll:altpll_component|clk_pll_10_to_50_altpll:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "clk_pll_50_to_200" for hierarchy "clk_pll_50_to_200:wiz_2" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 41
-Info (12128): Elaborating entity "altpll" for hierarchy "clk_pll_50_to_200:wiz_2|altpll:altpll_component" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
-Info (12130): Elaborated megafunction instantiation "clk_pll_50_to_200:wiz_2|altpll:altpll_component" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
-Info (12133): Instantiated megafunction "clk_pll_50_to_200:wiz_2|altpll:altpll_component" with the following parameter: File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
+Info (12128): Elaborating entity "clk_pll_50_to_200" for hierarchy "clk_pll_50_to_200:wiz_2" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 41
+Info (12128): Elaborating entity "altpll" for hierarchy "clk_pll_50_to_200:wiz_2|altpll:altpll_component" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
+Info (12130): Elaborated megafunction instantiation "clk_pll_50_to_200:wiz_2|altpll:altpll_component" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
+Info (12133): Instantiated megafunction "clk_pll_50_to_200:wiz_2|altpll:altpll_component" with the following parameter: File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/clk_pll_50_to_200.v Line: 113
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -5580,66 +5571,66 @@ Info (12133): Instantiated megafunction "clk_pll_50_to_200:wiz_2|altpll:altpll_c
     Info (12134): Parameter "switch_over_type" = "MANUAL"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/clk_pll_50_to_200_altpll.v
-    Info (12023): Found entity 1: clk_pll_50_to_200_altpll File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_50_to_200_altpll.v Line: 31
+    Info (12023): Found entity 1: clk_pll_50_to_200_altpll File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/db/clk_pll_50_to_200_altpll.v Line: 31
 Info (12128): Elaborating entity "clk_pll_50_to_200_altpll" for hierarchy "clk_pll_50_to_200:wiz_2|altpll:altpll_component|clk_pll_50_to_200_altpll:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "uart" for hierarchy "uart:u_uart" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 101
-Warning (10230): Verilog HDL assignment warning at uart.v(56): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 56
-Warning (10230): Verilog HDL assignment warning at uart.v(57): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 57
-Warning (10230): Verilog HDL assignment warning at uart.v(62): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 62
-Warning (10230): Verilog HDL assignment warning at uart.v(64): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 64
-Warning (10230): Verilog HDL assignment warning at uart.v(66): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 66
-Warning (10230): Verilog HDL assignment warning at uart.v(69): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 69
-Warning (10230): Verilog HDL assignment warning at uart.v(78): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 78
-Warning (10230): Verilog HDL assignment warning at uart.v(111): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 111
-Warning (10230): Verilog HDL assignment warning at uart.v(120): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 120
-Warning (10230): Verilog HDL assignment warning at uart.v(122): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 122
-Warning (10230): Verilog HDL assignment warning at uart.v(130): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/uart.v Line: 130
-Info (12128): Elaborating entity "usb_cmd_gateway" for hierarchy "usb_cmd_gateway:u_cmd" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 118
-Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(80): truncated value with size 32 to match size of target (10) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v Line: 80
-Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(113): truncated value with size 32 to match size of target (8) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v Line: 113
-Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(139): truncated value with size 32 to match size of target (10) File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/usb_cmd_gateway.v Line: 139
-Info (12128): Elaborating entity "instructionHandler" for hierarchy "instructionHandler:u_ins" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 172
-Info (12128): Elaborating entity "memory4c" for hierarchy "memory4c:u_delays" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 231
-Info (12128): Elaborating entity "storage" for hierarchy "memory4c:u_delays|storage:block[0]" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 88
-Info (12128): Elaborating entity "deMux8" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 122
-Info (12128): Elaborating entity "deMux" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux:first" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 39
-Info (12128): Elaborating entity "deMuxBase" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux:first|deMuxBase:u[0]" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 19
-Info (12128): Elaborating entity "deMux4" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux4:l1" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 40
-Info (12128): Elaborating entity "deMux8" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 178
-Info (12128): Elaborating entity "deMux" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute|deMux:first" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 39
-Info (12128): Elaborating entity "deMux4" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute|deMux4:l1" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/deMux.v Line: 40
-Info (12128): Elaborating entity "mux8" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/memory.v Line: 242
-Info (12128): Elaborating entity "mux4" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 38
-Info (12128): Elaborating entity "mux" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo|mux:lo" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 27
-Info (12128): Elaborating entity "muxBase" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo|mux:lo|muxBase:mine[0]" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/mux.v Line: 18
-Info (12128): Elaborating entity "pulseHandler" for hierarchy "pulseHandler:u_pc" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 478
-Warning (10240): Verilog HDL Always Construct warning at pulseHandler.v(174): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v Line: 174
+Info (12128): Elaborating entity "uart" for hierarchy "uart:u_uart" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 107
+Warning (10230): Verilog HDL assignment warning at uart.v(56): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 56
+Warning (10230): Verilog HDL assignment warning at uart.v(57): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 57
+Warning (10230): Verilog HDL assignment warning at uart.v(62): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 62
+Warning (10230): Verilog HDL assignment warning at uart.v(64): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 64
+Warning (10230): Verilog HDL assignment warning at uart.v(66): truncated value with size 32 to match size of target (6) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 66
+Warning (10230): Verilog HDL assignment warning at uart.v(69): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 69
+Warning (10230): Verilog HDL assignment warning at uart.v(78): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 78
+Warning (10230): Verilog HDL assignment warning at uart.v(111): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 111
+Warning (10230): Verilog HDL assignment warning at uart.v(120): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 120
+Warning (10230): Verilog HDL assignment warning at uart.v(122): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 122
+Warning (10230): Verilog HDL assignment warning at uart.v(130): truncated value with size 32 to match size of target (16) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/uart.v Line: 130
+Info (12128): Elaborating entity "usb_cmd_gateway" for hierarchy "usb_cmd_gateway:u_cmd" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 124
+Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(80): truncated value with size 32 to match size of target (10) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/usb_cmd_gateway.v Line: 80
+Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(113): truncated value with size 32 to match size of target (8) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/usb_cmd_gateway.v Line: 113
+Warning (10230): Verilog HDL assignment warning at usb_cmd_gateway.v(139): truncated value with size 32 to match size of target (10) File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/usb_cmd_gateway.v Line: 139
+Info (12128): Elaborating entity "instructionHandler" for hierarchy "instructionHandler:u_ins" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 180
+Info (12128): Elaborating entity "memory4c" for hierarchy "memory4c:u_delays" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 239
+Info (12128): Elaborating entity "storage" for hierarchy "memory4c:u_delays|storage:block[0]" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 88
+Info (12128): Elaborating entity "deMux8" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 122
+Info (12128): Elaborating entity "deMux" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux:first" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 39
+Info (12128): Elaborating entity "deMuxBase" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux:first|deMuxBase:u[0]" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 19
+Info (12128): Elaborating entity "deMux4" for hierarchy "memory4c:u_delays|deMux8:gen_blockMux[0].blockMux|deMux4:l1" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 40
+Info (12128): Elaborating entity "deMux8" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 178
+Info (12128): Elaborating entity "deMux" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute|deMux:first" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 39
+Info (12128): Elaborating entity "deMux4" for hierarchy "memory4c:u_delays|deMux8:gen_blockRoute[0].blockRoute|deMux4:l1" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/deMux.v Line: 40
+Info (12128): Elaborating entity "mux8" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/memory.v Line: 242
+Info (12128): Elaborating entity "mux4" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 38
+Info (12128): Elaborating entity "mux" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo|mux:lo" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 27
+Info (12128): Elaborating entity "muxBase" for hierarchy "memory4c:u_delays|mux8:gen_readBlock[0].readBlock|mux4:lo|mux:lo|muxBase:mine[0]" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/mux.v Line: 18
+Info (12128): Elaborating entity "pulseHandler" for hierarchy "pulseHandler:u_pc" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 510
+Warning (10240): Verilog HDL Always Construct warning at pulseHandler.v(174): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseHandler.v Line: 174
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "delay_init_b" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "width_init_b" into its bus
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "clk_pll_10_to_50:wiz_1|altpll:altpll_component|clk_pll_10_to_50_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v Line: 93
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseHandler.v Line: 72
+        Warning (14320): Synthesized away node "clk_pll_10_to_50:wiz_1|altpll:altpll_component|clk_pll_10_to_50_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/db/clk_pll_10_to_50_altpll.v Line: 93
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseHandler.v Line: 72
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "clkled" is stuck at GND File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 9
-    Warning (13410): Pin "led" is stuck at GND File: C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/pulseController.v Line: 13
+    Warning (13410): Pin "clkled" is stuck at GND File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 9
+    Warning (13410): Pin "led" is stuck at GND File: C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/pulseController.v Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 16 assignments for entity "clkswitcher" -- entity does not exist in design
 Warning (20013): Ignored 14 assignments for entity "clkswitcher_altclkctrl_0" -- entity does not exist in design
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3710 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 3711 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 3688 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 4915 megabytes
-    Info: Processing ended: Wed Mar 18 19:01:05 2026
-    Info: Elapsed time: 00:00:14
+    Info: Processing ended: Fri Mar 20 11:31:21 2026
+    Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:23
 
 

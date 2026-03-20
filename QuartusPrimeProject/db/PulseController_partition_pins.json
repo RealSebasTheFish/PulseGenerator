@@ -56,7 +56,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "led_arr[6]",
+					"strict" : false
+				},
+				{
 					"name" : "led_arr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
 					"strict" : false
 				},
 				{

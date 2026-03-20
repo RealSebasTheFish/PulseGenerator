@@ -124,10 +124,10 @@ module pulseHandler #(
     end
 
     wire valid_trig_in_armed =
-        (state == S_ARMED) &&
-        armed_mode &&
-        trig_rearm &&
-        (trig_rise || (trig_q && !running));
+    (state == S_ARMED) &&
+    armed_mode &&
+    trig_rearm &&
+    trig_rise;
 
     always @* begin
         nstate = state;

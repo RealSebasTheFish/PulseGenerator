@@ -1,7 +1,7 @@
 [IBIS Ver]   4.2
 [File Name]  PulseController.ibs
 [File Rev]   3.0
-[Date]       March 18, 2026
+[Date]       March 20, 2026
 [Source]     Altera Corporation
 [Notes]      - The models are designated as "Final" and have been correlated against physical device operation.
              - This IBIS model is checked using IBISCHK v5.0.4
@@ -29,9 +29,9 @@
 [Package]
 | RLC values are for 484 FBGA package
 | variable  typ        min        max
-R_pkg       338m       176m       739m  
-L_pkg       3.25nH     1.81nH     7.54nH  
-C_pkg       0.80pF     0.56pF     1.31pF  
+R_pkg       346m       176m       739m  
+L_pkg       3.28nH     1.81nH     7.54nH  
+C_pkg       0.81pF     0.56pF     1.31pF  
 |     
 [Pin] signal_name                              model_name                               R_pin    L_pin     C_pin
 |     
@@ -43,6 +43,7 @@ A8    led_arr[0]                               25_cio_r50                       
 A9    led_arr[1]                               25_cio_r50                               635.8m   6.193nH   1.167pF
 AA18  GND                                      GND                                                         
 AA4   GND                                      GND                                                         
+AA7   reset_n                                  25_cin_p                                 617.8m   6.258nH   1.288pF
 AB1   GND                                      GND                                                         
 AB22  GND                                      GND                                                         
 B10   led_arr[3]                               25_cio_r50                               432.0m   3.866nH   0.928pF

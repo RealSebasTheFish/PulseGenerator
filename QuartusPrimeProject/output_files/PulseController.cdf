@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Ign)
-		Device PartName(10M50DAF484ES) MfrSpec(OpMask(0) Child_OpMask(2 1 0) FullPath("C:/Users/sebas/Downloads/PulseGenerator-main/PulseGenerator-main/QuartusPrimeProject/output_files/PulseController.pof"));
+		Device PartName(10M50DAF484ES) MfrSpec(OpMask(0) Child_OpMask(2 1 0) FullPath("C:/Users/sebas/Desktop/School/PHYS4310/PulseGenerator/QuartusPrimeProject/output_files/PulseController.pof"));
 
 ChainEnd;
 

@@ -1,5 +1,5 @@
 Flow report for PulseController
-Wed Mar 18 19:02:04 2026
+Fri Mar 20 11:31:59 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 18 19:02:04 2026          ;
+; Flow Status                        ; Successful - Fri Mar 20 11:31:59 2026          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; PulseController                                ;
 ; Top-level Entity Name              ; pulseController                                ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C6GES                               ;
 ; Timing Models                      ; Preliminary                                    ;
-; Total logic elements               ; 3,033 / 49,760 ( 6 % )                         ;
-;     Total combinational functions  ; 2,478 / 49,760 ( 5 % )                         ;
-;     Dedicated logic registers      ; 2,196 / 49,760 ( 4 % )                         ;
-; Total registers                    ; 2196                                           ;
-; Total pins                         ; 21 / 360 ( 6 % )                               ;
+; Total logic elements               ; 3,080 / 49,760 ( 6 % )                         ;
+;     Total combinational functions  ; 2,502 / 49,760 ( 5 % )                         ;
+;     Dedicated logic registers      ; 2,199 / 49,760 ( 4 % )                         ;
+; Total registers                    ; 2199                                           ;
+; Total pins                         ; 22 / 360 ( 6 % )                               ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2026 19:00:52 ;
+; Start date & time ; 03/20/2026 11:30:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PulseController     ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------------------------------------------------+---------------+-----------------+-----------------------------------+
 ; Assignment Name                        ; Value                                                         ; Default Value ; Entity Name     ; Section Id                        ;
 +----------------------------------------+---------------------------------------------------------------+---------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                  ; 18691175249196.177387485234672                                ; --            ; --              ; --                                ;
+; COMPILER_SIGNATURE_ID                  ; 18691175249196.177402065903868                                ; --            ; --              ; --                                ;
 ; EDA_BOARD_DESIGN_SIGNAL_INTEGRITY_TOOL ; IBIS (Signal Integrity)                                       ; <None>        ; --              ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME               ; NA                                                            ; --            ; --              ; tb_pulseController_50MHz          ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST        ; Off                                                           ; --            ; --              ; eda_board_design_timing           ;
@@ -122,12 +122,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4915 MB             ; 00:00:22                           ;
-; Fitter               ; 00:00:45     ; 1.4                     ; 6185 MB             ; 00:00:48                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4856 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 3.4                     ; 4983 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4770 MB             ; 00:00:01                           ;
-; Total                ; 00:01:07     ; --                      ; --                  ; 00:01:20                           ;
+; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4915 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:25     ; 1.5                     ; 6161 MB             ; 00:00:53                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4856 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 3.0                     ; 4983 MB             ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4770 MB             ; 00:00:02                           ;
+; Total                ; 00:00:56     ; --                      ; --                  ; 00:01:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
